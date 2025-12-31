@@ -1,6 +1,24 @@
 {
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/features.html", "destination": "/features", "permanent": true },
+    { "source": "/pricing.html", "destination": "/pricing", "permanent": true },
+    { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
+    { "source": "/support.html", "destination": "/support", "permanent": true },
+    { "source": "/terms.html", "destination": "/terms", "permanent": true },
+    { "source": "/features/", "destination": "/features", "permanent": true },
+    { "source": "/pricing/", "destination": "/pricing", "permanent": true },
+    { "source": "/privacy/", "destination": "/privacy", "permanent": true },
+    { "source": "/support/", "destination": "/support", "permanent": true },
+    { "source": "/terms/", "destination": "/terms", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/site/index.html" },
+    { "source": "/features", "destination": "/site/features.html" },
+    { "source": "/pricing", "destination": "/site/pricing.html" },
+    { "source": "/privacy", "destination": "/site/privacy.html" },
+    { "source": "/support", "destination": "/site/support.html" },
+    { "source": "/terms", "destination": "/site/terms.html" },
     { "source": "/(.*)", "destination": "/site/$1" }
   ]
 }
