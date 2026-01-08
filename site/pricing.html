@@ -3,22 +3,74 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pricing — AdShield Pro</title>
-  <meta name="description" content="AdShield Pro pricing: start free, then upgrade to Pro with a one-time payment. Compare Free vs Pro features and lifetime access." />
+  <title>AdShield Pro Pricing — Free Ad Blocker + Pro Lifetime Upgrade</title>
+  <meta name="description" content="AdShield Pro pricing: install the free ad blocker, then upgrade to Pro with a one-time lifetime payment for advanced controls and cleaner pages." />
   <link rel="canonical" href="https://adshieldpro.org/pricing" />
   <meta name="robots" content="index,follow" />
 
-  <meta property="og:title" content="Pricing — AdShield Pro" />
-  <meta property="og:description" content="Start free, then upgrade to Pro with a one-time payment for lifetime access. Compare Free vs Pro features." />
+  <meta property="og:title" content="AdShield Pro Pricing — Free + Pro Lifetime Upgrade" />
+  <meta property="og:description" content="Start free, then upgrade to Pro with a one-time lifetime payment. Compare Free vs Pro features and choose the right level of control." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://adshieldpro.org/pricing" />
   <meta property="og:site_name" content="AdShield Pro" />
-  <meta property="og:image" content="https://adshieldpro.org/assets/og-placeholder.png" />
+  <meta property="og:image" content="https://adshieldpro.org/ui-image.png" />
+  <meta property="og:image:alt" content="AdShield Pro browser extension interface" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pricing — AdShield Pro" />
-  <meta name="twitter:description" content="Start free, then upgrade to Pro with a one-time payment for lifetime access. Compare Free vs Pro features." />
-  <meta name="twitter:image" content="https://adshieldpro.org/assets/og-placeholder.png" />
+  <meta name="twitter:title" content="AdShield Pro Pricing — Free + Pro Lifetime Upgrade" />
+  <meta name="twitter:description" content="Start free, then upgrade to Pro with a one-time lifetime payment. Compare Free vs Pro features and choose the right level of control." />
+  <meta name="twitter:image" content="https://adshieldpro.org/ui-image.png" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://adshieldpro.org/#organization",
+          "name": "AdShield Pro",
+          "url": "https://adshieldpro.org/",
+          "email": "support@adshieldpro.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://adshieldpro.org/icon.svg"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://adshieldpro.org/#website",
+          "url": "https://adshieldpro.org/",
+          "name": "AdShield Pro",
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://adshieldpro.org/pricing#webpage",
+          "url": "https://adshieldpro.org/pricing",
+          "name": "AdShield Pro Pricing",
+          "isPartOf": { "@id": "https://adshieldpro.org/#website" },
+          "about": { "@id": "https://adshieldpro.org/#app" },
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://adshieldpro.org/#app",
+          "name": "AdShield Pro",
+          "applicationCategory": "BrowserApplication",
+          "operatingSystem": "Chrome",
+          "url": "https://adshieldpro.org/",
+          "image": "https://adshieldpro.org/ui-image.png",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "category": "Free"
+          },
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        }
+      ]
+    }
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./styles.css" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -49,7 +101,7 @@
                 <div class="min-w-56 rounded-xl border border-slate-900/10 bg-white shadow-soft p-2">
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store</a>
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://addons.mozilla.org/" target="_blank" rel="noreferrer">Firefox Add-ons</a>
-                  <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://microsoftedge.microsoft.com/addons" target="_blank" rel="noreferrer">Microsoft Edge</a>
+                  <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://microsoftedge.microsoft.com/addons/detail/adshield-pro-%E2%80%93-ad-blocker/dpknkijcpldmcdbpafilmagbmpgocipg" target="_blank" rel="noreferrer">Microsoft Edge</a>
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Brave</a>
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://addons.opera.com/" target="_blank" rel="noreferrer">Opera Add-ons</a>
                 </div>
@@ -68,7 +120,7 @@
     <main class="container mx-auto px-4 py-10 md:py-14">
       <div class="max-w-5xl">
         <h1 class="text-3xl md:text-4xl font-semibold tracking-tight">Pricing & Upgrade</h1>
-        <p class="mt-3 text-slate-700 max-w-3xl">AdShield Pro is easy to start with and easy to upgrade. Pro is a one-time purchase for lifetime access.</p>
+        <p class="mt-3 text-slate-700 max-w-3xl">Install AdShield Pro for free, then upgrade any time to unlock Pro controls with a one-time lifetime payment. No subscription, no recurring charges.</p>
 
         <div class="mt-6 rounded-3xl p-6 md:p-8 bg-white border border-slate-900/10 shadow-soft">
           <div class="flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
@@ -181,7 +233,7 @@
             <div class="mt-3 grid gap-2 text-sm">
               <a class="text-slate-700 hover:text-slate-900" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store</a>
               <a class="text-slate-700 hover:text-slate-900" href="https://addons.mozilla.org/" target="_blank" rel="noreferrer">Firefox Add-ons</a>
-              <a class="text-slate-700 hover:text-slate-900" href="https://microsoftedge.microsoft.com/addons" target="_blank" rel="noreferrer">Microsoft Edge</a>
+              <a class="text-slate-700 hover:text-slate-900" href="https://microsoftedge.microsoft.com/addons/detail/adshield-pro-%E2%80%93-ad-blocker/dpknkijcpldmcdbpafilmagbmpgocipg" target="_blank" rel="noreferrer">Microsoft Edge</a>
               <a class="text-slate-700 hover:text-slate-900" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Brave</a>
               <a class="text-slate-700 hover:text-slate-900" href="https://addons.opera.com/" target="_blank" rel="noreferrer">Opera Add-ons</a>
             </div>

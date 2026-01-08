@@ -3,22 +3,68 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Features — AdShield Pro</title>
-  <meta name="description" content="Explore AdShield Pro features: ad and tracker blocking, privacy protection, faster browsing, allowlisting, and simple controls." />
+  <title>AdShield Pro Features — Ad Blocker, Tracker Blocker & Privacy Controls</title>
+  <meta name="description" content="Explore AdShield Pro features: block ads and trackers, improve page speed, protect privacy, and control blocking per site with local-only settings." />
   <link rel="canonical" href="https://adshieldpro.org/features" />
   <meta name="robots" content="index,follow" />
 
-  <meta property="og:title" content="Features — AdShield Pro" />
+  <meta property="og:title" content="AdShield Pro Features — Ad Blocker, Tracker Blocker & Privacy Controls" />
   <meta property="og:description" content="See how AdShield Pro blocks ads and trackers, protects privacy, and keeps browsing fast with lightweight, local-only controls." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://adshieldpro.org/features" />
   <meta property="og:site_name" content="AdShield Pro" />
-  <meta property="og:image" content="https://adshieldpro.org/assets/og-placeholder.png" />
+  <meta property="og:image" content="https://adshieldpro.org/ui-image.png" />
+  <meta property="og:image:alt" content="AdShield Pro browser extension interface" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Features — AdShield Pro" />
+  <meta name="twitter:title" content="AdShield Pro Features — Ad Blocker, Tracker Blocker & Privacy Controls" />
   <meta name="twitter:description" content="See how AdShield Pro blocks ads and trackers, protects privacy, and keeps browsing fast with lightweight, local-only controls." />
-  <meta name="twitter:image" content="https://adshieldpro.org/assets/og-placeholder.png" />
+  <meta name="twitter:image" content="https://adshieldpro.org/ui-image.png" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://adshieldpro.org/#organization",
+          "name": "AdShield Pro",
+          "url": "https://adshieldpro.org/",
+          "email": "support@adshieldpro.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://adshieldpro.org/icon.svg"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://adshieldpro.org/#website",
+          "url": "https://adshieldpro.org/",
+          "name": "AdShield Pro",
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://adshieldpro.org/features#webpage",
+          "url": "https://adshieldpro.org/features",
+          "name": "AdShield Pro Features",
+          "isPartOf": { "@id": "https://adshieldpro.org/#website" },
+          "about": { "@id": "https://adshieldpro.org/#app" },
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://adshieldpro.org/#app",
+          "name": "AdShield Pro",
+          "applicationCategory": "BrowserApplication",
+          "operatingSystem": "Chrome",
+          "url": "https://adshieldpro.org/",
+          "image": "https://adshieldpro.org/ui-image.png",
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        }
+      ]
+    }
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./styles.css" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -49,7 +95,7 @@
                 <div class="min-w-56 rounded-xl border border-slate-900/10 bg-white shadow-soft p-2">
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store</a>
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://addons.mozilla.org/" target="_blank" rel="noreferrer">Firefox Add-ons</a>
-                  <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://microsoftedge.microsoft.com/addons" target="_blank" rel="noreferrer">Microsoft Edge</a>
+                  <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://microsoftedge.microsoft.com/addons/detail/adshield-pro-%E2%80%93-ad-blocker/dpknkijcpldmcdbpafilmagbmpgocipg" target="_blank" rel="noreferrer">Microsoft Edge</a>
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Brave</a>
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://addons.opera.com/" target="_blank" rel="noreferrer">Opera Add-ons</a>
                 </div>
@@ -67,8 +113,8 @@
 
     <main class="container mx-auto px-4 py-10 md:py-14">
       <div class="max-w-4xl">
-        <h1 class="text-3xl md:text-4xl font-semibold tracking-tight">Features</h1>
-        <p class="mt-3 text-slate-700 max-w-3xl">AdShield Pro focuses on effective blocking, privacy protection, and simple controls. Everything runs locally on your device.</p>
+        <h1 class="text-3xl md:text-4xl font-semibold tracking-tight">AdShield Pro Features</h1>
+        <p class="mt-3 text-slate-700 max-w-3xl">AdShield Pro is a lightweight ad blocker and tracker blocker built for speed and privacy. Blocking and settings run locally on your device—no accounts, no analytics.</p>
 
         <div class="mt-8 grid gap-4">
           <section class="rounded-3xl p-6 md:p-8 bg-white border border-slate-900/10 shadow-soft">
@@ -152,7 +198,7 @@
             <div class="mt-3 grid gap-2 text-sm">
               <a class="text-slate-700 hover:text-slate-900" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store</a>
               <a class="text-slate-700 hover:text-slate-900" href="https://addons.mozilla.org/" target="_blank" rel="noreferrer">Firefox Add-ons</a>
-              <a class="text-slate-700 hover:text-slate-900" href="https://microsoftedge.microsoft.com/addons" target="_blank" rel="noreferrer">Microsoft Edge</a>
+              <a class="text-slate-700 hover:text-slate-900" href="https://microsoftedge.microsoft.com/addons/detail/adshield-pro-%E2%80%93-ad-blocker/dpknkijcpldmcdbpafilmagbmpgocipg" target="_blank" rel="noreferrer">Microsoft Edge</a>
               <a class="text-slate-700 hover:text-slate-900" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Brave</a>
               <a class="text-slate-700 hover:text-slate-900" href="https://addons.opera.com/" target="_blank" rel="noreferrer">Opera Add-ons</a>
             </div>

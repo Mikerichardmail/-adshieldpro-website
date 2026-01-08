@@ -13,6 +13,8 @@
     { "source": "/terms/", "destination": "/terms", "permanent": true }
   ],
   "rewrites": [
+    { "source": "/robots.txt", "destination": "/site/robots.txt" },
+    { "source": "/sitemap.xml", "destination": "/site/sitemap.xml" },
     { "source": "/", "destination": "/site/index.html" },
     { "source": "/features", "destination": "/site/features.html" },
     { "source": "/pricing", "destination": "/site/pricing.html" },
