@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AdShield Pro — Ad Blocker & Privacy Guard</title>
-  <meta name="description" content="AdShield Pro blocks ads and trackers, protects your privacy, and helps pages load faster. Privacy-first, offline-first ad blocker for Chrome." />
+  <title>AdShield Pro — Next-Gen Ad Blocking & Privacy Protection</title>
+  <meta name="description" content="AdShield Pro delivers next-gen ad blocking and privacy protection with fast, local-only filtering. Block ads, stop trackers, and browse faster—no tracking, no telemetry, no subscriptions." />
   <link rel="canonical" href="https://adshieldpro.org/" />
   <meta name="robots" content="index,follow" />
 
-  <meta property="og:title" content="AdShield Pro — Ad Blocker & Privacy Guard" />
-  <meta property="og:description" content="Block ads and trackers, protect privacy, and browse faster. Privacy-first, offline-first ad blocker for Chrome." />
+  <meta property="og:title" content="AdShield Pro — Next-Gen Ad Blocking & Privacy Protection" />
+  <meta property="og:description" content="Clean, fast, private browsing with local-only ad blocking and tracker protection. No tracking, no telemetry, no subscriptions." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://adshieldpro.org/" />
   <meta property="og:site_name" content="AdShield Pro" />
@@ -17,8 +17,8 @@
   <meta property="og:image:alt" content="AdShield Pro browser extension interface" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AdShield Pro — Ad Blocker & Privacy Guard" />
-  <meta name="twitter:description" content="Block ads and trackers, protect privacy, and browse faster. Privacy-first, offline-first ad blocker for Chrome." />
+  <meta name="twitter:title" content="AdShield Pro — Next-Gen Ad Blocking & Privacy Protection" />
+  <meta name="twitter:description" content="Clean, fast, private browsing with local-only ad blocking and tracker protection. No tracking, no telemetry, no subscriptions." />
   <meta name="twitter:image" content="https://adshieldpro.org/ui-image.png" />
 
   <script type="application/ld+json">
@@ -44,7 +44,29 @@
           "publisher": { "@id": "https://adshieldpro.org/#organization" }
         },
         {
+          "@type": "WebPage",
+          "@id": "https://adshieldpro.org/#webpage",
+          "url": "https://adshieldpro.org/",
+          "name": "AdShield Pro",
+          "isPartOf": { "@id": "https://adshieldpro.org/#website" },
+          "about": { "@id": "https://adshieldpro.org/#app" },
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://adshieldpro.org/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://adshieldpro.org/"
+            }
+          ]
+        },
+        {
           "@type": "SoftwareApplication",
+          "@id": "https://adshieldpro.org/#app",
           "name": "AdShield Pro",
           "applicationCategory": "BrowserApplication",
           "operatingSystem": "Chrome",
@@ -64,34 +86,34 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What permissions does it need?",
+              "name": "Is AdShield Pro free?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "AdShield Pro uses Chrome permissions like declarativeNetRequest (blocking), storage (local settings), and scripting (cleaning page elements). These are used for functionality, not tracking."
+                "text": "Yes — the basic ad blocking and privacy protection are completely free."
               }
             },
             {
               "@type": "Question",
-              "name": "Does it collect any data?",
+              "name": "Is there a subscription?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No personal data, no analytics, and no tracking. Settings are stored locally on your device."
+                "text": "No — premium features are available for a one-time purchase, not a recurring subscription."
               }
             },
             {
               "@type": "Question",
-              "name": "How do I uninstall it?",
+              "name": "Does it track my data?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Chrome → Extensions → Manage Extensions → Remove."
+                "text": "Absolutely not. AdShield Pro never collects or sends your personal browsing data."
               }
             },
             {
               "@type": "Question",
-              "name": "Where can I get help?",
+              "name": "Will it slow down my browser?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Visit the Support page for activation help, troubleshooting, and contact information."
+                "text": "No — AdShield Pro runs locally and efficiently, increasing your browsing speed by removing unnecessary elements."
               }
             }
           ]
@@ -129,7 +151,7 @@
               <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
                 <div class="min-w-56 rounded-xl border border-slate-900/10 bg-white shadow-soft p-2">
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store</a>
-                  <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://addons.mozilla.org/" target="_blank" rel="noreferrer">Firefox Add-ons</a>
+                  <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://addons.mozilla.org/en-US/firefox/addon/adshield-pro-ad-blocker/" target="_blank" rel="noreferrer">Firefox Add-ons</a>
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://microsoftedge.microsoft.com/addons/detail/adshield-pro-%E2%80%93-ad-blocker/dpknkijcpldmcdbpafilmagbmpgocipg" target="_blank" rel="noreferrer">Microsoft Edge</a>
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Brave</a>
                   <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="https://addons.opera.com/" target="_blank" rel="noreferrer">Opera Add-ons</a>
@@ -157,12 +179,11 @@
               </div>
 
               <h1 class="mt-5 text-4xl font-semibold leading-tight tracking-tight md:text-5xl text-balance">
-                AdShield Pro – Ad Blocker & Privacy Guard
+                🛡️ AdShield Pro — Next-Gen Ad Blocking &amp; Privacy Protection
               </h1>
-              <p class="mt-4 text-lg text-slate-700 text-balance">
-                Block ads, protect privacy, browse faster.
-                A lightweight ad blocker that runs locally on your device.
-              </p>
+              <p class="mt-4 text-lg text-slate-700 text-balance">Welcome to AdShield Pro — your ultimate solution for ad-free, fast, and private browsing. In a world filled with intrusive ads, hidden trackers, and slow-loading pages, AdShield Pro gives you back control of your web experience — without compromising your privacy.</p>
+              <p class="mt-4 text-lg text-slate-700 text-balance">Whether you want to block ads, remove trackers, speed up your browsing, or protect your personal data from prying eyes, AdShield Pro delivers powerful protection that runs locally on your device — no cloud servers, no third-party tracking, and no hidden data collection.</p>
+              <p class="mt-4 text-lg text-slate-700 text-balance">👉 Clean browsing. Faster pages. Total privacy. That’s the AdShield Pro promise.</p>
 
               <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <a class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Add to Chrome (Free)</a>
@@ -171,12 +192,12 @@
 
               <div class="mt-6 grid grid-cols-3 gap-3 text-sm">
                 <div class="rounded-xl p-3 card shadow-soft">
-                  <div class="font-semibold">Offline-first</div>
-                  <div class="text-slate-600">runs locally</div>
+                  <div class="font-semibold">Local-first</div>
+                  <div class="text-slate-600">runs on-device</div>
                 </div>
                 <div class="rounded-xl p-3 card shadow-soft">
-                  <div class="font-semibold">No account</div>
-                  <div class="text-slate-600">no signup</div>
+                  <div class="font-semibold">No subscription</div>
+                  <div class="text-slate-600">optional one-time Pro</div>
                 </div>
                 <div class="rounded-xl p-3 card shadow-soft">
                   <div class="font-semibold">No tracking</div>
@@ -205,12 +226,12 @@
 
                   <div class="mt-4 grid grid-cols-2 gap-3">
                     <div class="rounded-xl border border-slate-900/10 bg-white p-4">
-                      <div class="text-sm font-semibold">Cleaner pages</div>
-                      <div class="mt-1 text-sm text-slate-600">Fewer distractions.</div>
+                      <div class="text-sm font-semibold">Clean browsing</div>
+                      <div class="mt-1 text-sm text-slate-600">Less clutter.</div>
                     </div>
                     <div class="rounded-xl border border-slate-900/10 bg-white p-4">
-                      <div class="text-sm font-semibold">Privacy guard</div>
-                      <div class="mt-1 text-sm text-slate-600">Blocks trackers.</div>
+                      <div class="text-sm font-semibold">Total privacy</div>
+                      <div class="mt-1 text-sm text-slate-600">Stops trackers.</div>
                     </div>
                   </div>
                 </div>
@@ -222,38 +243,233 @@
         </div>
       </section>
 
+      <section id="related" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Explore more</h2>
+            <p class="mt-2 text-slate-700 max-w-3xl">Jump to key pages to learn more about features, pricing, privacy, and support.</p>
+          </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <a class="rounded-2xl p-6 card shadow-soft hover:bg-white" href="/features">
+            <div class="text-sm font-semibold">Features</div>
+            <p class="mt-2 text-sm text-slate-700">Total ad blocking, tracker protection, and customization.</p>
+          </a>
+          <a class="rounded-2xl p-6 card shadow-soft hover:bg-white" href="/pricing">
+            <div class="text-sm font-semibold">Pricing</div>
+            <p class="mt-2 text-sm text-slate-700">Free version vs Pro lifetime upgrade (one-time purchase).</p>
+          </a>
+          <a class="rounded-2xl p-6 card shadow-soft hover:bg-white" href="/privacy">
+            <div class="text-sm font-semibold">Privacy</div>
+            <p class="mt-2 text-sm text-slate-700">Local-only processing with no tracking or analytics.</p>
+          </a>
+          <a class="rounded-2xl p-6 card shadow-soft hover:bg-white" href="/support">
+            <div class="text-sm font-semibold">Support</div>
+            <p class="mt-2 text-sm text-slate-700">Installation, activation, and troubleshooting help.</p>
+          </a>
+          <a class="rounded-2xl p-6 card shadow-soft hover:bg-white" href="/ad-blocker">
+            <div class="text-sm font-semibold">Ad Blocker</div>
+            <p class="mt-2 text-sm text-slate-700">Block ads everywhere with local-only, privacy-first filtering.</p>
+          </a>
+          <a class="rounded-2xl p-6 card shadow-soft hover:bg-white" href="/tracker-blocker">
+            <div class="text-sm font-semibold">Tracker Blocker</div>
+            <p class="mt-2 text-sm text-slate-700">Stop trackers and reduce third-party surveillance.</p>
+          </a>
+          <a class="rounded-2xl p-6 card shadow-soft hover:bg-white" href="/lifetime-upgrade">
+            <div class="text-sm font-semibold">Lifetime Upgrade</div>
+            <p class="mt-2 text-sm text-slate-700">One-time Pro upgrade — no subscription.</p>
+          </a>
+          <a class="rounded-2xl p-6 card shadow-soft hover:bg-white" href="/how-to-block-ads-on-chrome">
+            <div class="text-sm font-semibold">How to Block Ads on Chrome</div>
+            <p class="mt-2 text-sm text-slate-700">Step-by-step Chrome setup and privacy-first defaults.</p>
+          </a>
+          <a class="rounded-2xl p-6 card shadow-soft hover:bg-white" href="/how-to-stop-trackers">
+            <div class="text-sm font-semibold">How to Stop Trackers</div>
+            <p class="mt-2 text-sm text-slate-700">Reduce tracking and third-party surveillance.</p>
+          </a>
+          <a class="rounded-2xl p-6 card shadow-soft hover:bg-white" href="/how-to-fix-sites-after-blocking">
+            <div class="text-sm font-semibold">Fix Broken Sites After Blocking</div>
+            <p class="mt-2 text-sm text-slate-700">Allowlist and per-site troubleshooting steps.</p>
+          </a>
+        </div>
+      </section>
+
       <section id="features" class="container mx-auto px-4 py-12 md:py-16">
         <div class="flex items-end justify-between gap-6 flex-wrap">
           <div>
-            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">What it does</h2>
-            <p class="mt-2 text-slate-700 max-w-2xl">AdShield Pro blocks ads and trackers locally to keep browsing fast and private.</p>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">🚫 Block Ads Everywhere — On All Websites</h2>
+            <p class="mt-2 text-slate-700 max-w-3xl">Ads are everywhere — from banner ads on news sites to pop-ups on blogs and pre-roll video ads on streaming platforms. They clutter your screen, distract your attention, and steal your time.</p>
           </div>
           <a class="text-sm font-semibold text-slate-900 hover:underline" href="/features">See all features</a>
         </div>
 
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="rounded-2xl p-6 card shadow-soft">
-            <div class="text-sm font-semibold">Blocks ads & trackers</div>
-            <p class="mt-2 text-sm text-slate-700">Rule-based blocking that runs in your browser.</p>
+            <div class="text-sm font-semibold">AdShield Pro stops ads at the source:</div>
+            <ul class="mt-3 grid gap-2 text-sm text-slate-700 list-disc pl-5">
+              <li>Blocks display ads on webpages</li>
+              <li>Removes pop-ups and overlays</li>
+              <li>Skips video ads when possible</li>
+              <li>Stops auto-play ads across sites</li>
+            </ul>
           </div>
           <div class="rounded-2xl p-6 card shadow-soft">
-            <div class="text-sm font-semibold">Improves page speed</div>
-            <p class="mt-2 text-sm text-slate-700">Reduces page clutter so sites load and feel lighter.</p>
+            <div class="text-sm font-semibold">Smart, local-only blocking</div>
+            <p class="mt-2 text-sm text-slate-700">Unlike simple blockers that rely on dated lists, AdShield Pro uses a smart, rule-based filtering engine that works entirely offline for faster, more reliable blocking — without sending your data to any third-party servers.</p>
           </div>
-          <div class="rounded-2xl p-6 card shadow-soft">
-            <div class="text-sm font-semibold">Works offline</div>
-            <p class="mt-2 text-sm text-slate-700">Core blocking works without sending browsing data anywhere.</p>
+        </div>
+      </section>
+
+      <section id="privacy" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="rounded-3xl p-6 md:p-10 bg-white border border-slate-900/10 shadow-soft">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">🔍 Stop Trackers — Protect Your Privacy</h2>
+              <p class="mt-2 text-slate-700">Most websites today come loaded with invisible trackers that follow you from site to site, building profiles of your interests and behavior. These trackers invade your privacy, slow down your browsing, and can even expose sensitive data.</p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="text-xs font-semibold text-slate-600">🛑</div>
+                <div class="mt-2 font-semibold">Blocks third-party trackers</div>
+                <p class="mt-1 text-sm text-slate-700">Analytics scripts, ad network trackers, social media monitors, and more.</p>
+              </div>
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="text-xs font-semibold text-slate-600">🔒</div>
+                <div class="mt-2 font-semibold">Prevents data leakage</div>
+                <p class="mt-1 text-sm text-slate-700">Your browsing data stays on your device — never sent to remote servers.</p>
+              </div>
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="text-xs font-semibold text-slate-600">📵</div>
+                <div class="mt-2 font-semibold">Zero tracking, zero telemetry</div>
+                <p class="mt-1 text-sm text-slate-700">AdShield Pro does not collect, store, or transmit your browsing data — guaranteed.</p>
+              </div>
+            </div>
+          </div>
+          <p class="mt-6 text-slate-700">This means your search history, visited sites, and online behavior remain fully private.</p>
+          <p class="mt-3 text-slate-700">Learn more in our <a class="font-semibold text-slate-900 hover:underline" href="/privacy">Privacy Policy</a>.</p>
+        </div>
+      </section>
+
+      <section id="speed" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+          <div class="rounded-3xl p-8 card shadow-soft">
+            <h2 class="text-2xl font-semibold tracking-tight">⏱️ Faster Browsing — Less Clutter, More Speed</h2>
+            <p class="mt-2 text-slate-700">Ads and trackers don’t just annoy — they slow down your browser. Each ad banner, script, or tracking pixel adds extra load time, increasing data consumption and decreasing performance.</p>
+            <p class="mt-4 text-slate-700">By blocking unwanted content before it loads, AdShield Pro makes your web experience smoother and more responsive — especially on slower connections or metered data plans.</p>
+          </div>
+
+          <div class="rounded-3xl p-8 bg-white border border-slate-900/10 shadow-soft">
+            <h3 class="text-lg font-semibold">With AdShield Pro you get:</h3>
+            <div class="mt-4 grid gap-3 text-sm text-slate-700">
+              <div class="flex gap-3"><span class="mt-0.5 h-5 w-5 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs">✓</span><span>Faster page load times</span></div>
+              <div class="flex gap-3"><span class="mt-0.5 h-5 w-5 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs">✓</span><span>Reduced data usage</span></div>
+              <div class="flex gap-3"><span class="mt-0.5 h-5 w-5 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs">✓</span><span>Lower CPU &amp; memory load</span></div>
+              <div class="flex gap-3"><span class="mt-0.5 h-5 w-5 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs">✓</span><span>Improved battery life on laptops &amp; mobile</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="simple" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="rounded-3xl p-6 md:p-10 bg-white border border-slate-900/10 shadow-soft">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">🔧 Designed for Everyone — Simple, Yet Powerful</h2>
+              <p class="mt-2 text-slate-700">You don’t have to be a tech expert to enjoy an ad-free and private web. AdShield Pro is built for users of all levels.</p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="text-xs font-semibold text-slate-600">🚀</div>
+                <div class="mt-2 font-semibold">One-Click Setup</div>
+                <p class="mt-1 text-sm text-slate-700">Install and start blocking immediately — no complicated configurations.</p>
+              </div>
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="text-xs font-semibold text-slate-600">🔘</div>
+                <div class="mt-2 font-semibold">Intuitive Controls</div>
+                <ul class="mt-2 grid gap-2 text-sm text-slate-700 list-disc pl-5">
+                  <li>Toggle blocking on or off</li>
+                  <li>Whitelist trusted sites</li>
+                  <li>Access advanced settings (Pro)</li>
+                  <li>Review blocked items</li>
+                </ul>
+              </div>
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="text-xs font-semibold text-slate-600">🌐</div>
+                <div class="mt-2 font-semibold">Per-Site Customization</div>
+                <p class="mt-1 text-sm text-slate-700">Whitelist your favorite sites so you can support creators without suffering through intrusive ads elsewhere.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">⭐ Why Choose AdShield Pro?</h2>
+            <p class="mt-2 text-slate-700 max-w-3xl">There are many ad blockers available — but AdShield Pro stands out because it combines powerful blocking, strict privacy, and lightning-fast performance into one clean package:</p>
           </div>
         </div>
 
-        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="rounded-2xl p-6 card shadow-soft">
-            <div class="text-sm font-semibold">No data collection</div>
-            <p class="mt-2 text-sm text-slate-700">No personal data, no tracking, no analytics.</p>
+            <div class="text-sm font-semibold">✔ 100% Local, Offline Ad Blocking</div>
+            <p class="mt-2 text-sm text-slate-700">No external servers, no cloud-based filtering, and no data uploads.</p>
           </div>
           <div class="rounded-2xl p-6 card shadow-soft">
-            <div class="text-sm font-semibold">Control & customization</div>
-            <p class="mt-2 text-sm text-slate-700">Allowlist trusted sites and adjust settings when needed.</p>
+            <div class="text-sm font-semibold">✔ Privacy First</div>
+            <p class="mt-2 text-sm text-slate-700">No analytics, no trackers, no telemetry — ever.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">✔ Works Everywhere</div>
+            <p class="mt-2 text-sm text-slate-700">Chrome, Edge, Firefox, Opera – AdShield Pro works seamlessly across major browsers.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">✔ One-Time Upgrade (Optional Pro)</div>
+            <p class="mt-2 text-sm text-slate-700">Get premium features with a one-time purchase, not a recurring subscription. Lifetime access. No hidden fees.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft md:col-span-2">
+            <div class="text-sm font-semibold">✔ Full Customization</div>
+            <p class="mt-2 text-sm text-slate-700">Advanced users can fine-tune blocking rules, manage filter lists, and control exactly how content is handled.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pro" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+          <div class="rounded-3xl p-8 card shadow-soft">
+            <h2 class="text-2xl font-semibold tracking-tight">🌟 Pro Features — Take Control Like a Power User</h2>
+            <p class="mt-2 text-slate-700">The free version of AdShield Pro already delivers essential ad blocking and privacy protection. But if you want advanced control and customization, upgrading to AdShield Pro (Premium) unlocks powerful additional tools:</p>
+            <p class="mt-4 text-slate-700">Best of all? Pro is a one-time purchase, not a subscription — you pay once and get lifetime access to all premium capabilities.</p>
+            <p class="mt-4 text-slate-700">See <a class="font-semibold text-slate-900 hover:underline" href="/pricing">pricing and Free vs Pro</a>.</p>
+          </div>
+
+          <div class="rounded-3xl p-8 bg-white border border-slate-900/10 shadow-soft">
+            <div class="mt-1 grid gap-3 text-sm text-slate-700">
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="font-semibold">🔹 Advanced Custom Filter Rules</div>
+                <p class="mt-1">Design your own filter criteria to block or allow specific elements across sites.</p>
+              </div>
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="font-semibold">🔹 Cosmetic Filtering</div>
+                <p class="mt-1">Remove visual clutter like large banners, sponsored boxes, and disruptive page elements.</p>
+              </div>
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="font-semibold">🔹 Local Analytics &amp; Insights</div>
+                <p class="mt-1">See how many ads and trackers have been blocked — all locally, without data leaving your device.</p>
+              </div>
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="font-semibold">🔹 Enhanced Whitelist Management</div>
+                <p class="mt-1">Set rules per domain, subdomain, path, or even specific page elements.</p>
+              </div>
+              <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+                <div class="font-semibold">🔹 Priority Support</div>
+                <p class="mt-1">Get priority assistance for issues, questions, and optimization.</p>
+              </div>
+            </div>
+
+            <a class="mt-6 inline-flex w-full items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-slate-900 ring-1 ring-slate-900/10 hover:bg-white" href="https://adshieldpro.gumroad.com/l/AdShieldPro" target="_blank" rel="noreferrer">Upgrade to Pro (One-time)</a>
           </div>
         </div>
       </section>
@@ -262,53 +478,156 @@
         <div class="rounded-3xl p-6 md:p-10 bg-white border border-slate-900/10 shadow-soft">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>
-              <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Why AdShield Pro</h2>
-              <p class="mt-2 text-slate-700">A practical ad blocker built for privacy and maintainability.</p>
+              <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">🧠 How It Works — Fast, Local, and Efficient</h2>
+              <p class="mt-2 text-slate-700">AdShield Pro uses an intelligent filtering engine that works offline on your device.</p>
             </div>
             <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
-                <div class="text-xs font-semibold text-slate-600">Step 1</div>
-                <div class="mt-2 font-semibold">Privacy-first</div>
-                <p class="mt-1 text-sm text-slate-700">No tracking, no analytics, no user profiling.</p>
+                <div class="text-xs font-semibold text-slate-600">🖥️</div>
+                <div class="mt-2 font-semibold">Local Filtering</div>
+                <ul class="mt-2 grid gap-2 text-sm text-slate-700 list-disc pl-5">
+                  <li>Instant rule matching</li>
+                  <li>Zero data leakage</li>
+                  <li>No remote logging</li>
+                </ul>
               </div>
               <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
-                <div class="text-xs font-semibold text-slate-600">Step 2</div>
-                <div class="mt-2 font-semibold">No subscription</div>
-                <p class="mt-1 text-sm text-slate-700">Upgrade is a one-time payment for lifetime access.</p>
+                <div class="text-xs font-semibold text-slate-600">📦</div>
+                <div class="mt-2 font-semibold">Rule-Based Engine</div>
+                <p class="mt-1 text-sm text-slate-700">Matches page elements and network requests against filter rules — all offline.</p>
               </div>
               <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
-                <div class="text-xs font-semibold text-slate-600">Step 3</div>
-                <div class="mt-2 font-semibold">Lightweight</div>
-                <p class="mt-1 text-sm text-slate-700">Designed to be fast and simple to use.</p>
+                <div class="text-xs font-semibold text-slate-600">🔄</div>
+                <div class="mt-2 font-semibold">Automatic Updates</div>
+                <p class="mt-1 text-sm text-slate-700">Filter lists are regularly updated to keep up with new ad and tracking techniques.</p>
               </div>
+            </div>
+          </div>
+          <p class="mt-6 text-slate-700">The result? Faster decisions, stronger privacy, stronger blocking — all while keeping your data secure and private.</p>
+        </div>
+      </section>
+
+      <section id="benefits" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">📈 Real Benefits for Real Users</h2>
+            <p class="mt-2 text-slate-700 max-w-3xl">Here’s what you’ll experience once AdShield Pro is active:</p>
+          </div>
+        </div>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">💡 Clean &amp; Focused Web Pages</div>
+            <p class="mt-2 text-sm text-slate-700">No more ads interrupting your reading or watching experience.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">🛡️ Stronger Privacy</div>
+            <p class="mt-2 text-sm text-slate-700">Trackers abandoned.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">🚀 Faster Load Times</div>
+            <p class="mt-2 text-sm text-slate-700">Less clutter means pages open quickly.</p>
+          </div>
+        </div>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">💰 Data Savings</div>
+            <p class="mt-2 text-sm text-slate-700">Reduced unwanted downloads — especially valuable on limited data plans.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">🖱️ More Space for Content</div>
+            <p class="mt-2 text-sm text-slate-700">With fewer ads and overlays, you see more of what you actually want.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="browsers" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="rounded-3xl p-6 md:p-10 bg-white border border-slate-900/10 shadow-soft">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">🧩 Works Across Your Favorite Browsers</h2>
+          <p class="mt-2 text-slate-700">AdShield Pro supports all major Chromium-based browsers like:</p>
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-sm text-slate-700">
+            <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">Google Chrome</div>
+            <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">Microsoft Edge</div>
+            <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">Brave</div>
+            <div class="rounded-2xl p-5 bg-slate-50 border border-slate-900/10">Opera</div>
+          </div>
+          <p class="mt-6 text-slate-700">And it also works on Mozilla Firefox with the same privacy-first, high-performance blocking you expect.</p>
+          <p class="mt-3 text-slate-700">This means no matter what browser you choose, AdShield Pro helps you browse smarter.</p>
+        </div>
+      </section>
+
+      <section id="audience" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+          <div class="rounded-3xl p-8 card shadow-soft">
+            <h2 class="text-2xl font-semibold tracking-tight">🌈 Beginner Friendly — Advanced Enough for Power Users</h2>
+            <p class="mt-2 text-slate-700">Whether you’re new to ad blockers or you know exactly what you want, AdShield Pro adapts to your needs:</p>
+            <div class="mt-6 grid gap-3 text-slate-700">
+              <div class="rounded-2xl p-5 bg-white border border-slate-900/10">
+                <div class="font-semibold">For Beginners</div>
+                <div class="mt-1 text-sm text-slate-600">Instant protection, easy toggles, minimal learning curve.</div>
+              </div>
+              <div class="rounded-2xl p-5 bg-white border border-slate-900/10">
+                <div class="font-semibold">For Advanced Users</div>
+                <div class="mt-1 text-sm text-slate-600">Custom filters, detailed control, and deep configuration options.</div>
+              </div>
+            </div>
+            <p class="mt-6 text-slate-700">You’re in control — not your browser, and definitely not advertisers.</p>
+          </div>
+
+          <div class="rounded-3xl p-8 bg-white border border-slate-900/10 shadow-soft">
+            <h3 class="text-lg font-semibold">📥 Getting Started Is Easy</h3>
+            <p class="mt-2 text-sm text-slate-700">You’re just a few clicks away from a cleaner, faster, and more private web:</p>
+            <ol class="mt-4 grid gap-2 text-sm text-slate-700 list-decimal pl-5">
+              <li>Install AdShield Pro from the official website.</li>
+              <li>Activate blocking with one click.</li>
+              <li>Customize settings if you want refined control.</li>
+              <li>Enjoy browsing without interruptions, trackers, or eye-sore ads.</li>
+            </ol>
+            <p class="mt-4 text-sm text-slate-700">No accounts, no logins, no subscriptions — just privacy and performance.</p>
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+              <a class="inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Download AdShield Pro</a>
+              <a class="inline-flex w-full items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-slate-900 ring-1 ring-slate-900/10 hover:bg-white" href="https://adshieldpro.gumroad.com/l/AdShieldPro" target="_blank" rel="noreferrer">Upgrade to Pro</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="pricing" class="container mx-auto px-4 py-12 md:py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-          <div class="rounded-3xl p-8 card shadow-soft">
-            <h2 class="text-2xl font-semibold tracking-tight">Free to use</h2>
-            <p class="mt-2 text-slate-700">Start with the core blocker, then upgrade when you want more control.</p>
-            <div class="mt-6">
-              <div class="text-4xl font-semibold">$0</div>
-              <div class="mt-1 text-sm text-slate-600">no account required</div>
-            </div>
-            <a class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Add to Chrome</a>
-            <p class="mt-3 text-xs text-slate-600">By installing, you agree to the terms and privacy policy.</p>
+      <section id="testimonials" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">📣 What Users Are Saying</h2>
+            <p class="mt-2 text-slate-700 max-w-3xl">Users around the world trust AdShield Pro to protect their privacy, block ads, and speed up their browsing experience — and you can too.</p>
           </div>
+        </div>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="rounded-2xl p-6 bg-white border border-slate-900/10 shadow-soft">
+            <p class="text-sm text-slate-700">“AdShield Pro transformed my browser — pages load faster and I don’t see those annoying ads anymore.”</p>
+            <div class="mt-3 text-sm font-semibold">— Satisfied User</div>
+          </div>
+          <div class="rounded-2xl p-6 bg-white border border-slate-900/10 shadow-soft">
+            <p class="text-sm text-slate-700">“I was tired of trackers following me around. AdShield Pro gives me peace of mind.”</p>
+            <div class="mt-3 text-sm font-semibold">— Privacy Conscious Browser</div>
+          </div>
+        </div>
+      </section>
 
-          <div class="rounded-3xl p-8 bg-white border border-slate-900/10 shadow-soft">
-            <h3 class="text-lg font-semibold">Upgrade to Pro</h3>
-            <p class="mt-2 text-sm text-slate-700">One-time payment • No subscription</p>
-            <div class="mt-4 grid gap-3 text-sm text-slate-700">
-              <div class="flex gap-3"><span class="mt-0.5 h-5 w-5 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs">✓</span><span>Advanced blocking controls</span></div>
-              <div class="flex gap-3"><span class="mt-0.5 h-5 w-5 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs">✓</span><span>Cosmetic filtering for cleaner pages</span></div>
-              <div class="flex gap-3"><span class="mt-0.5 h-5 w-5 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs">✓</span><span>Performance and data-saver options</span></div>
-              <div class="flex gap-3"><span class="mt-0.5 h-5 w-5 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs">✓</span><span>Lifetime access (one-time upgrade)</span></div>
+      <section id="privacy-built" class="container mx-auto px-4 py-12 md:py-16">
+        <div class="rounded-3xl p-8 md:p-10 bg-slate-900 text-white shadow-soft">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <div>
+              <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">🔐 Your Privacy Is Built In</h2>
+              <p class="mt-2 text-white/80">At AdShield Pro, privacy isn’t an add-on — it’s a foundation:</p>
+              <ul class="mt-4 grid gap-2 text-sm text-white/80 list-disc pl-5">
+                <li>No data is collected</li>
+                <li>No tracking of usage</li>
+                <li>No cloud access to your browsing</li>
+                <li>Your data stays on your device</li>
+              </ul>
+              <p class="mt-4 text-white/80">Unlike many competitors that sell user data or track behavior, AdShield Pro is strictly private by design.</p>
             </div>
-            <a class="mt-6 inline-flex w-full items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-slate-900 ring-1 ring-slate-900/10 hover:bg-white" href="https://adshieldpro.gumroad.com/l/AdShieldPro" target="_blank" rel="noreferrer">View pricing & upgrade</a>
+            <div class="flex flex-col sm:flex-row gap-3 md:justify-end">
+              <a class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-100" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Add to Chrome</a>
+              <a class="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/20 hover:bg-white/10" href="/privacy">Privacy Policy</a>
+            </div>
           </div>
         </div>
       </section>
@@ -316,27 +635,27 @@
       <section id="faq" class="container mx-auto px-4 py-12 md:py-16">
         <div class="flex items-end justify-between gap-6 flex-wrap">
           <div>
-            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">FAQ</h2>
-            <p class="mt-2 text-slate-700 max-w-2xl">Clear answers about privacy, permissions, and upgrading.</p>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">💡 Frequently Asked Questions</h2>
+            <p class="mt-2 text-slate-700 max-w-2xl">Quick answers about pricing, privacy, and performance.</p>
           </div>
         </div>
 
         <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
           <details class="rounded-2xl p-5 bg-white border border-slate-900/10 shadow-soft">
-            <summary class="cursor-pointer font-semibold">What permissions does it need?</summary>
-            <p class="mt-2 text-sm text-slate-700">AdShield Pro uses Chrome permissions like <span class="font-medium">declarativeNetRequest</span> (blocking), <span class="font-medium">storage</span> (local settings), and <span class="font-medium">scripting</span> (cleaning page elements). These are used for functionality, not tracking.</p>
+            <summary class="cursor-pointer font-semibold">Is AdShield Pro free?</summary>
+            <p class="mt-2 text-sm text-slate-700">Yes — the basic ad blocking and privacy protection are completely free.</p>
           </details>
           <details class="rounded-2xl p-5 bg-white border border-slate-900/10 shadow-soft">
-            <summary class="cursor-pointer font-semibold">Does it collect any data?</summary>
-            <p class="mt-2 text-sm text-slate-700">No personal data, no analytics, and no tracking. Settings are stored locally on your device. See <a class="underline" href="/privacy">Privacy Policy</a>.</p>
+            <summary class="cursor-pointer font-semibold">Is there a subscription?</summary>
+            <p class="mt-2 text-sm text-slate-700">No — premium features are available for a one-time purchase, not a recurring subscription.</p>
           </details>
           <details class="rounded-2xl p-5 bg-white border border-slate-900/10 shadow-soft">
-            <summary class="cursor-pointer font-semibold">How do I uninstall it?</summary>
-            <p class="mt-2 text-sm text-slate-700">Chrome → Extensions → Manage Extensions → Remove.</p>
+            <summary class="cursor-pointer font-semibold">Does it track my data?</summary>
+            <p class="mt-2 text-sm text-slate-700">Absolutely not. AdShield Pro never collects or sends your personal browsing data.</p>
           </details>
           <details class="rounded-2xl p-5 bg-white border border-slate-900/10 shadow-soft">
-            <summary class="cursor-pointer font-semibold">Where can I get help?</summary>
-            <p class="mt-2 text-sm text-slate-700">Visit <a class="underline" href="/support">Support</a> for activation help, troubleshooting, and contact.</p>
+            <summary class="cursor-pointer font-semibold">Will it slow down my browser?</summary>
+            <p class="mt-2 text-sm text-slate-700">No — AdShield Pro runs locally and efficiently, increasing your browsing speed by removing unnecessary elements.</p>
           </details>
         </div>
       </section>
@@ -345,13 +664,19 @@
         <div class="rounded-3xl p-8 md:p-10 bg-slate-900 text-white shadow-soft">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <div>
-              <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Ready to try it?</h2>
-              <p class="mt-2 text-white/80">Install for free, or upgrade to Pro when you want advanced controls.</p>
+              <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">🌐 Experience Better Browsing Today</h2>
+              <p class="mt-2 text-white/80">Say goodbye to annoying ads, hidden trackers, slow page loads, and data-draining scripts — and say hello to clean browsing, strong privacy, faster web pages, and full control over your experience.</p>
             </div>
             <div class="flex flex-col sm:flex-row gap-3 md:justify-end">
-              <a class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-100" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Add to Chrome (Free)</a>
-              <a class="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/20 hover:bg-white/10" href="https://adshieldpro.gumroad.com/l/AdShieldPro" target="_blank" rel="noreferrer">Upgrade to Pro</a>
+              <a class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-100" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">👉 Download AdShield Pro</a>
+              <a class="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/20 hover:bg-white/10" href="https://adshieldpro.gumroad.com/l/AdShieldPro" target="_blank" rel="noreferrer">One-time upgrade (Pro)</a>
             </div>
+          </div>
+          <div class="mt-6 hr"></div>
+          <div class="mt-6 text-white/80 text-sm">
+            <div class="font-semibold text-white">📣 Final Summary – Why AdShield Pro?</div>
+            <p class="mt-2">AdShield Pro is more than just an ad blocker — it’s a complete suite of tools designed to block ads and trackers, speed up browsing, protect your privacy, give you total control, and deliver premium features with a one-time upgrade.</p>
+            <p class="mt-2">No subscriptions. No telemetry. No compromises. Just the best browsing experience — powered by you.</p>
           </div>
         </div>
       </section>
@@ -385,7 +710,7 @@
             <div class="text-sm font-semibold text-slate-900">Platform</div>
             <div class="mt-3 grid gap-2 text-sm">
               <a class="text-slate-700 hover:text-slate-900" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store</a>
-              <a class="text-slate-700 hover:text-slate-900" href="https://addons.mozilla.org/" target="_blank" rel="noreferrer">Firefox Add-ons</a>
+              <a class="text-slate-700 hover:text-slate-900" href="https://addons.mozilla.org/en-US/firefox/addon/adshield-pro-ad-blocker/" target="_blank" rel="noreferrer">Firefox Add-ons</a>
               <a class="text-slate-700 hover:text-slate-900" href="https://microsoftedge.microsoft.com/addons/detail/adshield-pro-%E2%80%93-ad-blocker/dpknkijcpldmcdbpafilmagbmpgocipg" target="_blank" rel="noreferrer">Microsoft Edge</a>
               <a class="text-slate-700 hover:text-slate-900" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Brave</a>
               <a class="text-slate-700 hover:text-slate-900" href="https://addons.opera.com/" target="_blank" rel="noreferrer">Opera Add-ons</a>

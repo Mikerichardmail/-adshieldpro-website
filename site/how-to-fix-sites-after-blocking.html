@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Fix Broken Sites After Ad Blocking (Allowlist & Per-Site Controls)</title>
+  <meta name="description" content="If a website breaks after blocking ads or trackers, use per-site controls and allowlisting. Learn step-by-step troubleshooting with AdShield Pro." />
+  <link rel="canonical" href="https://adshieldpro.org/how-to-fix-sites-after-blocking" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="How to Fix Broken Sites After Ad Blocking (Allowlist & Per-Site Controls)" />
+  <meta property="og:description" content="Step-by-step troubleshooting: reload, disable blocking for a site, and use allowlisting to restore functionality." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://adshieldpro.org/how-to-fix-sites-after-blocking" />
+  <meta property="og:site_name" content="AdShield Pro" />
+  <meta property="og:image" content="https://adshieldpro.org/ui-image.png" />
+  <meta property="og:image:alt" content="AdShield Pro browser extension interface" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Fix Broken Sites After Ad Blocking" />
+  <meta name="twitter:description" content="Step-by-step troubleshooting: reload, disable blocking for a site, and use allowlisting to restore functionality." />
+  <meta name="twitter:image" content="https://adshieldpro.org/ui-image.png" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://adshieldpro.org/#organization",
+          "name": "AdShield Pro",
+          "url": "https://adshieldpro.org/",
+          "email": "support@adshieldpro.org",
+          "logo": { "@type": "ImageObject", "url": "https://adshieldpro.org/icon.svg" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://adshieldpro.org/#website",
+          "url": "https://adshieldpro.org/",
+          "name": "AdShield Pro",
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://adshieldpro.org/how-to-fix-sites-after-blocking#webpage",
+          "url": "https://adshieldpro.org/how-to-fix-sites-after-blocking",
+          "name": "How to Fix Broken Sites After Blocking",
+          "isPartOf": { "@id": "https://adshieldpro.org/#website" },
+          "about": { "@id": "https://adshieldpro.org/#app" },
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://adshieldpro.org/how-to-fix-sites-after-blocking#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://adshieldpro.org/" },
+            { "@type": "ListItem", "position": 2, "name": "Fix Broken Sites", "item": "https://adshieldpro.org/how-to-fix-sites-after-blocking" }
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://adshieldpro.org/#app",
+          "name": "AdShield Pro",
+          "applicationCategory": "BrowserApplication",
+          "operatingSystem": "Chrome",
+          "url": "https://adshieldpro.org/",
+          "image": "https://adshieldpro.org/ui-image.png",
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        }
+      ]
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/icon.svg" />
+  <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <div class="bg-grid">
+    <header class="sticky top-0 z-50 border-b border-slate-900/10 bg-white/70 backdrop-blur">
+      <div class="container mx-auto px-4">
+        <div class="flex h-16 items-center justify-between gap-4">
+          <a class="flex items-center gap-2" href="/" aria-label="Home">
+            <img class="h-9 w-9 rounded-xl" src="/icon.svg" alt="AdShield Pro" />
+            <span class="font-semibold tracking-tight">AdShield Pro</span>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a class="hover:text-slate-950 text-slate-700" href="/features">Features</a>
+            <a class="hover:text-slate-950 text-slate-700" href="/pricing">Pricing</a>
+            <a class="hover:text-slate-950 text-slate-700" href="/privacy">Privacy</a>
+            <a class="hover:text-slate-950 text-slate-700" href="/support">Support</a>
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <a class="btn btn-secondary" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Add to Chrome</a>
+            <a class="btn btn-primary" href="/pricing">Upgrade to Pro</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container mx-auto px-4 py-12 md:py-16">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold text-slate-600">Troubleshooting guide</p>
+          <h1 class="mt-3 text-4xl md:text-5xl font-semibold tracking-tight">How to Fix Broken Sites After Blocking</h1>
+          <p class="mt-4 text-lg text-slate-700">If a website doesn’t load correctly after blocking ads/trackers, it usually depends on a third-party script. The fix is typically a quick per-site adjustment.</p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">1) Reload and check the extension state</div>
+            <p class="mt-2 text-sm text-slate-700">Reload the page first. Then confirm AdShield Pro is enabled for the current tab and the site isn’t allowlisted.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">2) Disable blocking for that site</div>
+            <p class="mt-2 text-sm text-slate-700">If the site relies on blocked scripts, temporarily disable blocking for that site and refresh. This is the fastest way to confirm the cause.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">3) Use allowlisting when needed</div>
+            <p class="mt-2 text-sm text-slate-700">If you trust the site and it keeps breaking, add it to your allowlist so it always works. You can remove it later.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">4) Still stuck? Get help</div>
+            <p class="mt-2 text-sm text-slate-700">Some sites require more tuning. Use the support page for next steps and contact details.</p>
+            <div class="mt-4">
+              <a class="btn btn-secondary" href="/support">Support</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 rounded-3xl p-6 md:p-10 bg-white border border-slate-900/10 shadow-soft">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Related reading</h2>
+          <p class="mt-2 text-slate-700">To understand what’s being blocked, see <a class="font-semibold text-slate-900 hover:underline" href="/ad-blocker">Ad Blocker</a> and <a class="font-semibold text-slate-900 hover:underline" href="/tracker-blocker">Tracker Blocker</a>.</p>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4 pb-14">
+        <div class="rounded-3xl p-6 md:p-10 bg-slate-950 text-white">
+          <div class="max-w-3xl">
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Control per site, keep privacy local</h2>
+            <p class="mt-2 text-white/80">AdShield Pro gives you per-site controls so you can balance blocking and compatibility.</p>
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+              <a class="btn btn-primary" href="/features">See features</a>
+              <a class="btn btn-secondary" href="/pricing">Upgrade to Pro</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-900/10 bg-white">
+      <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <a class="inline-flex items-center gap-2" href="/" aria-label="Home">
+              <img class="h-9 w-9 rounded-xl" src="/icon.svg" alt="AdShield Pro" />
+              <span class="font-semibold tracking-tight">AdShield Pro</span>
+            </a>
+            <p class="mt-3 text-sm text-slate-600">Privacy-first ad blocker built for speed and control.</p>
+            <div class="mt-4 grid gap-2 text-sm">
+              <a class="text-slate-700 hover:text-slate-900" href="mailto:support@adshieldpro.org">support@adshieldpro.org</a>
+              <a class="text-slate-700 hover:text-slate-900" href="https://adshieldpro.gumroad.com/l/AdShieldPro" target="_blank" rel="noreferrer">Upgrade (Gumroad)</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold text-slate-900">Product</div>
+            <div class="mt-3 grid gap-2 text-sm">
+              <a class="text-slate-700 hover:text-slate-900" href="/features">Features</a>
+              <a class="text-slate-700 hover:text-slate-900" href="/pricing">Pricing</a>
+              <a class="text-slate-700 hover:text-slate-900" href="/support">Support</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold text-slate-900">Guides</div>
+            <div class="mt-3 grid gap-2 text-sm">
+              <a class="text-slate-700 hover:text-slate-900" href="/how-to-block-ads-on-chrome">Block ads on Chrome</a>
+              <a class="text-slate-700 hover:text-slate-900" href="/how-to-stop-trackers">Stop trackers</a>
+              <a class="text-slate-700 hover:text-slate-900" href="/how-to-fix-sites-after-blocking">Fix broken sites</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold text-slate-900">Legal</div>
+            <div class="mt-3 grid gap-2 text-sm">
+              <a class="text-slate-700 hover:text-slate-900" href="/privacy">Privacy Policy</a>
+              <a class="text-slate-700 hover:text-slate-900" href="/terms">Terms of Use</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-col md:flex-row gap-3 md:items-center md:justify-between text-sm text-slate-600">
+          <div>© <span id="year"></span> AdShield Pro. All rights reserved.</div>
+          <div class="flex flex-wrap gap-x-4 gap-y-2">
+            <a class="text-slate-700 hover:text-slate-900" href="/">Home</a>
+            <a class="text-slate-700 hover:text-slate-900" href="/features">Features</a>
+            <a class="text-slate-700 hover:text-slate-900" href="/pricing">Pricing</a>
+            <a class="text-slate-700 hover:text-slate-900" href="/support">Support</a>
+            <a class="text-slate-700 hover:text-slate-900" href="/privacy">Privacy</a>
+            <a class="text-slate-700 hover:text-slate-900" href="/terms">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

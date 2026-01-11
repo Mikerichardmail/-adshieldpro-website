@@ -10,17 +10,36 @@
     { "source": "/pricing/", "destination": "/pricing", "permanent": true },
     { "source": "/privacy/", "destination": "/privacy", "permanent": true },
     { "source": "/support/", "destination": "/support", "permanent": true },
-    { "source": "/terms/", "destination": "/terms", "permanent": true }
+    { "source": "/terms/", "destination": "/terms", "permanent": true },
+    { "source": "/ad-blocker.html", "destination": "/ad-blocker", "permanent": true },
+    { "source": "/tracker-blocker.html", "destination": "/tracker-blocker", "permanent": true },
+    { "source": "/lifetime-upgrade.html", "destination": "/lifetime-upgrade", "permanent": true },
+    { "source": "/ad-blocker/", "destination": "/ad-blocker", "permanent": true },
+    { "source": "/tracker-blocker/", "destination": "/tracker-blocker", "permanent": true },
+    { "source": "/lifetime-upgrade/", "destination": "/lifetime-upgrade", "permanent": true },
+    { "source": "/how-to-block-ads-on-chrome.html", "destination": "/how-to-block-ads-on-chrome", "permanent": true },
+    { "source": "/how-to-stop-trackers.html", "destination": "/how-to-stop-trackers", "permanent": true },
+    { "source": "/how-to-fix-sites-after-blocking.html", "destination": "/how-to-fix-sites-after-blocking", "permanent": true },
+    { "source": "/how-to-block-ads-on-chrome/", "destination": "/how-to-block-ads-on-chrome", "permanent": true },
+    { "source": "/how-to-stop-trackers/", "destination": "/how-to-stop-trackers", "permanent": true },
+    { "source": "/how-to-fix-sites-after-blocking/", "destination": "/how-to-fix-sites-after-blocking", "permanent": true }
   ],
   "rewrites": [
     { "source": "/robots.txt", "destination": "/site/robots.txt" },
     { "source": "/sitemap.xml", "destination": "/site/sitemap.xml" },
     { "source": "/", "destination": "/site/index.html" },
+    { "source": "/404", "destination": "/site/404.html" },
     { "source": "/features", "destination": "/site/features.html" },
     { "source": "/pricing", "destination": "/site/pricing.html" },
     { "source": "/privacy", "destination": "/site/privacy.html" },
     { "source": "/support", "destination": "/site/support.html" },
     { "source": "/terms", "destination": "/site/terms.html" },
+    { "source": "/ad-blocker", "destination": "/site/ad-blocker.html" },
+    { "source": "/tracker-blocker", "destination": "/site/tracker-blocker.html" },
+    { "source": "/lifetime-upgrade", "destination": "/site/lifetime-upgrade.html" },
+    { "source": "/how-to-block-ads-on-chrome", "destination": "/site/how-to-block-ads-on-chrome.html" },
+    { "source": "/how-to-stop-trackers", "destination": "/site/how-to-stop-trackers.html" },
+    { "source": "/how-to-fix-sites-after-blocking", "destination": "/site/how-to-fix-sites-after-blocking.html" },
     { "source": "/(.*)", "destination": "/site/$1" }
   ]
 }

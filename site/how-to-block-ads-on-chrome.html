@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Block Ads on Chrome — Fast, Privacy-First Setup</title>
+  <meta name="description" content="Learn how to block ads on Chrome in minutes. Install AdShield Pro, enable blocking, and fine-tune per-site controls — with offline-first, local-only privacy." />
+  <link rel="canonical" href="https://adshieldpro.org/how-to-block-ads-on-chrome" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="How to Block Ads on Chrome — Fast, Privacy-First Setup" />
+  <meta property="og:description" content="Step-by-step: install AdShield Pro, enable blocking, and customize per site — local-only privacy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://adshieldpro.org/how-to-block-ads-on-chrome" />
+  <meta property="og:site_name" content="AdShield Pro" />
+  <meta property="og:image" content="https://adshieldpro.org/ui-image.png" />
+  <meta property="og:image:alt" content="AdShield Pro browser extension interface" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Block Ads on Chrome — Fast, Privacy-First Setup" />
+  <meta name="twitter:description" content="Step-by-step: install AdShield Pro, enable blocking, and customize per site — local-only privacy." />
+  <meta name="twitter:image" content="https://adshieldpro.org/ui-image.png" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://adshieldpro.org/#organization",
+          "name": "AdShield Pro",
+          "url": "https://adshieldpro.org/",
+          "email": "support@adshieldpro.org",
+          "logo": { "@type": "ImageObject", "url": "https://adshieldpro.org/icon.svg" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://adshieldpro.org/#website",
+          "url": "https://adshieldpro.org/",
+          "name": "AdShield Pro",
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://adshieldpro.org/how-to-block-ads-on-chrome#webpage",
+          "url": "https://adshieldpro.org/how-to-block-ads-on-chrome",
+          "name": "How to Block Ads on Chrome",
+          "isPartOf": { "@id": "https://adshieldpro.org/#website" },
+          "about": { "@id": "https://adshieldpro.org/#app" },
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://adshieldpro.org/how-to-block-ads-on-chrome#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://adshieldpro.org/" },
+            { "@type": "ListItem", "position": 2, "name": "How to Block Ads on Chrome", "item": "https://adshieldpro.org/how-to-block-ads-on-chrome" }
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://adshieldpro.org/#app",
+          "name": "AdShield Pro",
+          "applicationCategory": "BrowserApplication",
+          "operatingSystem": "Chrome",
+          "url": "https://adshieldpro.org/",
+          "image": "https://adshieldpro.org/ui-image.png",
+          "publisher": { "@id": "https://adshieldpro.org/#organization" }
+        }
+      ]
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/icon.svg" />
+  <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <div class="bg-grid">
+    <header class="sticky top-0 z-50 border-b border-slate-900/10 bg-white/70 backdrop-blur">
+      <div class="container mx-auto px-4">
+        <div class="flex h-16 items-center justify-between gap-4">
+          <a class="flex items-center gap-2" href="/" aria-label="Home">
+            <img class="h-9 w-9 rounded-xl" src="/icon.svg" alt="AdShield Pro" />
+            <span class="font-semibold tracking-tight">AdShield Pro</span>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a class="hover:text-slate-950 text-slate-700" href="/features">Features</a>
+            <a class="hover:text-slate-950 text-slate-700" href="/pricing">Pricing</a>
+            <a class="hover:text-slate-950 text-slate-700" href="/privacy">Privacy</a>
+            <a class="hover:text-slate-950 text-slate-700" href="/support">Support</a>
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <a class="btn btn-secondary" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Add to Chrome</a>
+            <a class="btn btn-primary" href="/pricing">Upgrade to Pro</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container mx-auto px-4 py-12 md:py-16">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold text-slate-600">Chrome setup guide</p>
+          <h1 class="mt-3 text-4xl md:text-5xl font-semibold tracking-tight">How to Block Ads on Chrome</h1>
+          <p class="mt-4 text-lg text-slate-700">If you’re looking for a simple way to reduce ads and improve browsing speed, installing a trusted ad blocker is the fastest option. Below is a quick, privacy-first setup using AdShield Pro.</p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">1) Install the extension</div>
+            <p class="mt-2 text-sm text-slate-700">Install AdShield Pro from the Chrome Web Store, then pin it so it’s easy to access.</p>
+            <div class="mt-4">
+              <a class="btn btn-primary" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Install from Chrome Web Store</a>
+            </div>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">2) Confirm blocking is enabled</div>
+            <p class="mt-2 text-sm text-slate-700">Open a site with ads and reload. If ads remain, check that the site is not allowlisted and that the extension is enabled for the tab.</p>
+            <p class="mt-3 text-sm text-slate-700">If you need help, see <a class="font-semibold text-slate-900 hover:underline" href="/support">Support</a>.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">3) Customize per-site controls</div>
+            <p class="mt-2 text-sm text-slate-700">Some sites break when blocking is too aggressive. Use per-site controls to disable blocking or allowlist a site when needed, then refresh.</p>
+            <p class="mt-3 text-sm text-slate-700">Learn more about controls on <a class="font-semibold text-slate-900 hover:underline" href="/features">Features</a>.</p>
+          </div>
+          <div class="rounded-2xl p-6 card shadow-soft">
+            <div class="text-sm font-semibold">4) Keep it private</div>
+            <p class="mt-2 text-sm text-slate-700">Choose tools that don’t profile you. AdShield Pro is designed for offline-first, local-only filtering with no tracking or analytics.</p>
+            <p class="mt-3 text-sm text-slate-700">Read the <a class="font-semibold text-slate-900 hover:underline" href="/privacy">Privacy Policy</a>.</p>
+          </div>
+        </div>
+
+        <div class="mt-10 rounded-3xl p-6 md:p-10 bg-white border border-slate-900/10 shadow-soft">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Related reading</h2>
+          <p class="mt-2 text-slate-700">If you’re also trying to reduce tracking, see <a class="font-semibold text-slate-900 hover:underline" href="/how-to-stop-trackers">How to Stop Trackers</a> or the overview page <a class="font-semibold text-slate-900 hover:underline" href="/tracker-blocker">Tracker Blocker</a>.</p>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4 pb-14">
+        <div class="rounded-3xl p-6 md:p-10 bg-slate-950 text-white">
+          <div class="max-w-3xl">
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Ready to browse without ads?</h2>
+            <p class="mt-2 text-white/80">Install AdShield Pro and keep blocking local and private.</p>
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+              <a class="btn btn-primary" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Add to Chrome</a>
+              <a class="btn btn-secondary" href="/pricing">See pricing</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-900/10 bg-white">
+      <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <a class="inline-flex items-center gap-2" href="/" aria-label="Home">
+              <img class="h-9 w-9 rounded-xl" src="/icon.svg" alt="AdShield Pro" />
+              <span class="font-semibold tracking-tight">AdShield Pro</span>
+            </a>
+            <p class="mt-3 text-sm text-slate-600">Privacy-first ad blocker built for speed and control.</p>
+            <div class="mt-4 grid gap-2 text-sm">
+              <a class="text-slate-700 hover:text-slate-900" href="mailto:support@adshieldpro.org">support@adshieldpro.org</a>
+              <a class="text-slate-700 hover:text-slate-900" href="https://adshieldpro.gumroad.com/l/AdShieldPro" target="_blank" rel="noreferrer">Upgrade (Gumroad)</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold text-slate-900">Product</div>
+            <div class="mt-3 grid gap-2 text-sm">
+              <a class="text-slate-700 hover:text-slate-900" href="/features">Features</a>
+              <a class="text-slate-700 hover:text-slate-900" href="/pricing">Pricing</a>
+              <a class="text-slate-700 hover:text-slate-900" href="/support">Support</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold text-slate-900">Guides</div>
+            <div class="mt-3 grid gap-2 text-sm">
+              <a class="text-slate-700 hover:text-slate-900" href="/how-to-block-ads-on-chrome">Block ads on Chrome</a>
+              <a class="text-slate-700 hover:text-slate-900" href="/how-to-stop-trackers">Stop trackers</a>
+              <a class="text-slate-700 hover:text-slate-900" href="/how-to-fix-sites-after-blocking">Fix broken sites</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold text-slate-900">Legal</div>
+            <div class="mt-3 grid gap-2 text-sm">
+              <a class="text-slate-700 hover:text-slate-900" href="/privacy">Privacy Policy</a>
+              <a class="text-slate-700 hover:text-slate-900" href="/terms">Terms of Use</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-col md:flex-row gap-3 md:items-center md:justify-between text-sm text-slate-600">
+          <div>© <span id="year"></span> AdShield Pro. All rights reserved.</div>
+          <div class="flex flex-wrap gap-x-4 gap-y-2">
+            <a class="text-slate-700 hover:text-slate-900" href="/">Home</a>
+            <a class="text-slate-700 hover:text-slate-900" href="/features">Features</a>
+            <a class="text-slate-700 hover:text-slate-900" href="/pricing">Pricing</a>
+            <a class="text-slate-700 hover:text-slate-900" href="/support">Support</a>
+            <a class="text-slate-700 hover:text-slate-900" href="/privacy">Privacy</a>
+            <a class="text-slate-700 hover:text-slate-900" href="/terms">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
