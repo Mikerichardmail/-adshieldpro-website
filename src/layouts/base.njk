@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="canonical" href="https://adshieldpro.org/" />
+  <meta name="robots" content="index,follow" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/site/styles.css" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/icon.svg" />
+  <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  {{ content | safe }}
+</body>
+</html>

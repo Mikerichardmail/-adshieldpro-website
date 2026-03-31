@@ -1,4 +1,6 @@
 {
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/features.html", "destination": "/features", "permanent": true },

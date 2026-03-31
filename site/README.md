@@ -15,7 +15,7 @@ Search and replace these placeholders:
 - `Your Extension Name`
 - `support@example.com`
 - `https://github.com/your/repo/issues`
-- Chrome Web Store link: `https://chromewebstore.google.com/`
+- Chrome Web Store link: `https://chromewebstore.google.com/detail/adshield-pro-%E2%80%93-ad-blocker/nmbpdlhefpkebgacoaliblbcdmgoibbi`
 
 ## Preview locally
 
