@@ -1,6 +1,7 @@
 {
   "installCommand": "npm install",
   "buildCommand": "npm run build",
+  "outputDirectory": "site-i18n",
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/features.html", "destination": "/features", "permanent": true },
