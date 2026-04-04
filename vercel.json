@@ -1,7 +1,8 @@
 {
   "framework": null,
-  "installCommand": "echo 'Skipping install'",
-  "buildCommand": "echo 'Skipping build'",
+  "outputDirectory": "site-i18n",
+  "installCommand": "npm install",
+  "buildCommand": "npx @11ty/eleventy",
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/features.html", "destination": "/features", "permanent": true },
@@ -28,21 +29,21 @@
     { "source": "/how-to-fix-sites-after-blocking/", "destination": "/how-to-fix-sites-after-blocking", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/robots.txt", "destination": "/site/robots.txt" },
-    { "source": "/sitemap.xml", "destination": "/site/sitemap.xml" },
-    { "source": "/", "destination": "/site/index.html" },
-    { "source": "/404", "destination": "/site/404.html" },
-    { "source": "/features", "destination": "/site/features.html" },
-    { "source": "/pricing", "destination": "/site/pricing.html" },
-    { "source": "/privacy", "destination": "/site/privacy.html" },
-    { "source": "/support", "destination": "/site/support.html" },
-    { "source": "/terms", "destination": "/site/terms.html" },
-    { "source": "/ad-blocker", "destination": "/site/ad-blocker.html" },
-    { "source": "/tracker-blocker", "destination": "/site/tracker-blocker.html" },
-    { "source": "/lifetime-upgrade", "destination": "/site/lifetime-upgrade.html" },
-    { "source": "/how-to-block-ads-on-chrome", "destination": "/site/how-to-block-ads-on-chrome.html" },
-    { "source": "/how-to-stop-trackers", "destination": "/site/how-to-stop-trackers.html" },
-    { "source": "/how-to-fix-sites-after-blocking", "destination": "/site/how-to-fix-sites-after-blocking.html" },
-    { "source": "/(.*)", "destination": "/site/$1" }
+    { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/404", "destination": "/404.html" },
+    { "source": "/features", "destination": "/features.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/support", "destination": "/support.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/ad-blocker", "destination": "/ad-blocker.html" },
+    { "source": "/tracker-blocker", "destination": "/tracker-blocker.html" },
+    { "source": "/lifetime-upgrade", "destination": "/lifetime-upgrade.html" },
+    { "source": "/how-to-block-ads-on-chrome", "destination": "/how-to-block-ads-on-chrome.html" },
+    { "source": "/how-to-stop-trackers", "destination": "/how-to-stop-trackers.html" },
+    { "source": "/how-to-fix-sites-after-blocking", "destination": "/how-to-fix-sites-after-blocking.html" },
+    { "source": "/(.*)", "destination": "/$1" }
   ]
 }
