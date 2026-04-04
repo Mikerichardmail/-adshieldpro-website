@@ -1,7 +1,7 @@
 {
-  "installCommand": "npm install",
-  "buildCommand": "npm run build",
-  "outputDirectory": "site-i18n",
+  "framework": null,
+  "installCommand": "echo 'Skipping install'",
+  "buildCommand": "echo 'Skipping build'",
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/features.html", "destination": "/features", "permanent": true },
