@@ -1,0 +1,700 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "privacy": "Privacy",
+    "support": "Support",
+    "platform": "Platform",
+    "upgrade": "Upgrade",
+    "addToChrome": "Add to Chrome",
+    "installFree": "Install Free"
+  },
+
+  "platformLinks": [
+    { "label": "Chrome Web Store", "href": "https://chromewebstore.google.com/detail/adshield-pro-%E2%80%93-ad-blocker/nmbpdlhefpkebgacoaliblbcdmgoibbi" },
+    { "label": "Firefox Add-ons", "href": "https://addons.mozilla.org/en-US/firefox/addon/adshield-pro-ad-blocker/" },
+    { "label": "Microsoft Edge", "href": "https://microsoftedge.microsoft.com/addons/detail/adshield-pro-%E2%80%93-ad-blocker/dpknkijcpldmcdbpafilmagbmpgocipg" },
+    { "label": "Brave", "href": "https://chromewebstore.google.com/detail/adshield-pro-%E2%80%93-ad-blocker/nmbpdlhefpkebgacoaliblbcdmgoibbi" },
+    { "label": "Opera Add-ons", "href": "https://addons.opera.com/" }
+  ],
+
+  "footer": {
+    "tagline": "Privacy-first ad blocker built for speed and control.",
+    "email": "support@adshieldpro.org",
+    "upgradeLabel": "Upgrade (Gumroad)",
+    "upgradeHref": "https://adshieldpro.gumroad.com/l/AdShieldPro",
+    "sections": {
+      "product": {
+        "heading": "Product",
+        "links": [
+          { "label": "Features", "href": "/features" },
+          { "label": "Pricing", "href": "/pricing" },
+          { "label": "Support", "href": "/support" }
+        ]
+      },
+      "platform": {
+        "heading": "Platform",
+        "links": [
+          { "label": "Chrome Web Store", "href": "https://chromewebstore.google.com/detail/adshield-pro-%E2%80%93-ad-blocker/nmbpdlhefpkebgacoaliblbcdmgoibbi", "external": true },
+          { "label": "Firefox Add-ons", "href": "https://addons.mozilla.org/en-US/firefox/addon/adshield-pro-ad-blocker/", "external": true },
+          { "label": "Microsoft Edge", "href": "https://microsoftedge.microsoft.com/addons/detail/adshield-pro-%E2%80%93-ad-blocker/dpknkijcpldmcdbpafilmagbmpgocipg", "external": true },
+          { "label": "Brave", "href": "https://chromewebstore.google.com/detail/adshield-pro-%E2%80%93-ad-blocker/nmbpdlhefpkebgacoaliblbcdmgoibbi", "external": true },
+          { "label": "Opera Add-ons", "href": "https://addons.opera.com/", "external": true }
+        ]
+      },
+      "legal": {
+        "heading": "Legal",
+        "links": [
+          { "label": "Privacy Policy", "href": "/privacy" },
+          { "label": "Terms of Use", "href": "/terms" }
+        ]
+      }
+    },
+    "bottomLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "Features", "href": "/features" },
+      { "label": "Pricing", "href": "/pricing" },
+      { "label": "Support", "href": "/support" },
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Terms", "href": "/terms" }
+    ],
+    "copyright": "AdShield Pro. All rights reserved."
+  },
+
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "AdShield Pro — Next-Gen Ad Blocking & Privacy Protection",
+        "description": "AdShield Pro delivers next-gen ad blocking and privacy protection with fast, local-only filtering. Block ads, stop trackers, and browse faster—no tracking, no telemetry, no subscriptions.",
+        "canonical": "https://adshieldpro.org/",
+        "ogTitle": "AdShield Pro — Next-Gen Ad Blocking & Privacy Protection",
+        "ogDescription": "Clean, fast, private browsing with local-only ad blocking and tracker protection. No tracking, no telemetry, no subscriptions.",
+        "ogType": "website",
+        "ogUrl": "https://adshieldpro.org/",
+        "ogImage": "https://adshieldpro.org/ui-image.png",
+        "ogImageAlt": "AdShield Pro browser extension interface",
+        "twitterTitle": "AdShield Pro — Next-Gen Ad Blocking & Privacy Protection",
+        "twitterDescription": "Clean, fast, private browsing with local-only ad blocking and tracker protection. No tracking, no telemetry, no subscriptions.",
+        "robots": "index,follow"
+      },
+      "hero": {
+        "badge": "Works on Chrome • Offline-first • No tracking",
+        "h1": "AdShield Pro — Next-Gen Ad Blocking & Privacy Protection",
+        "intro1": "Welcome to AdShield Pro — your ultimate solution for ad-free, fast, and private browsing. In a world filled with intrusive ads, hidden trackers, and slow-loading pages, AdShield Pro gives you back control of your web experience — without compromising your privacy.",
+        "intro2": "Whether you want to block ads, remove trackers, speed up your browsing, or protect your personal data from prying eyes, AdShield Pro delivers powerful protection that runs locally on your device — no cloud servers, no third-party tracking, and no hidden data collection.",
+        "intro3": "👉 Clean browsing. Faster pages. Total privacy. That's the AdShield Pro promise.",
+        "ctaPrimary": "Add to Chrome (Free)",
+        "ctaSecondary": "Upgrade to Pro (Lifetime)",
+        "stats": [
+          { "label": "Local-first", "sub": "runs on-device" },
+          { "label": "No subscription", "sub": "optional one-time Pro" },
+          { "label": "No tracking", "sub": "no analytics" }
+        ],
+        "previewLabel": "Preview",
+        "previewCaption": "Extension preview",
+        "previewAlt": "AdShield Pro extension UI",
+        "previewCard1": { "label": "Clean browsing", "sub": "Less clutter." },
+        "previewCard2": { "label": "Total privacy", "sub": "Stops trackers." }
+      },
+      "related": {
+        "heading": "Explore more",
+        "sub": "Jump to key pages to learn more about features, pricing, privacy, and support.",
+        "cards": [
+          { "label": "Features", "desc": "Total ad blocking, tracker protection, and customization.", "href": "/features" },
+          { "label": "Pricing", "desc": "Free version vs Pro lifetime upgrade (one-time purchase).", "href": "/pricing" },
+          { "label": "Privacy", "desc": "Local-only processing with no tracking or analytics.", "href": "/privacy" },
+          { "label": "Support", "desc": "Installation, activation, and troubleshooting help.", "href": "/support" },
+          { "label": "Ad Blocker", "desc": "Block ads everywhere with local-only, privacy-first filtering.", "href": "/ad-blocker" },
+          { "label": "Tracker Blocker", "desc": "Stop trackers and reduce third-party surveillance.", "href": "/tracker-blocker" },
+          { "label": "Lifetime Upgrade", "desc": "One-time Pro upgrade — no subscription.", "href": "/lifetime-upgrade" },
+          { "label": "How to Block Ads on Chrome", "desc": "Step-by-step Chrome setup and privacy-first defaults.", "href": "/how-to-block-ads-on-chrome" },
+          { "label": "How to Stop Trackers", "desc": "Reduce tracking and third-party surveillance.", "href": "/how-to-stop-trackers" },
+          { "label": "Fix Broken Sites After Blocking", "desc": "Allowlist and per-site troubleshooting steps.", "href": "/how-to-fix-sites-after-blocking" }
+        ]
+      },
+      "blockAds": {
+        "h2": "🚫 Block Ads Everywhere — On All Websites",
+        "intro": "Ads are everywhere — from banner ads on news sites to pop-ups on blogs and pre-roll video ads on streaming platforms. They clutter your screen, distract your attention, and steal your time.",
+        "seeAll": "See all features",
+        "card1Heading": "AdShield Pro stops ads at the source:",
+        "card1Items": ["Blocks display ads on webpages", "Removes pop-ups and overlays", "Skips video ads when possible", "Stops auto-play ads across sites"],
+        "card2Heading": "Smart, local-only blocking",
+        "card2Body": "Unlike simple blockers that rely on dated lists, AdShield Pro uses a smart, rule-based filtering engine that works entirely offline for faster, more reliable blocking — without sending your data to any third-party servers."
+      },
+      "stopTrackers": {
+        "h2": "🔍 Stop Trackers — Protect Your Privacy",
+        "intro": "Most websites today come loaded with invisible trackers that follow you from site to site, building profiles of your interests and behavior. These trackers invade your privacy, slow down your browsing, and can even expose sensitive data.",
+        "features": [
+          { "icon": "🛑", "heading": "Blocks third-party trackers", "body": "Analytics scripts, ad network trackers, social media monitors, and more." },
+          { "icon": "🔒", "heading": "Prevents data leakage", "body": "Your browsing data stays on your device — never sent to remote servers." },
+          { "icon": "📵", "heading": "Zero tracking, zero telemetry", "body": "AdShield Pro does not collect, store, or transmit your browsing data — guaranteed." }
+        ],
+        "outro1": "This means your search history, visited sites, and online behavior remain fully private.",
+        "outro2": "Learn more in our",
+        "privacyLinkText": "Privacy Policy"
+      },
+      "faster": {
+        "h2": "⏱️ Faster Browsing — Less Clutter, More Speed",
+        "intro": "Ads and trackers don't just annoy — they slow down your browser. Each ad banner, script, or tracking pixel adds extra load time, increasing data consumption and decreasing performance.",
+        "body": "By blocking unwanted content before it loads, AdShield Pro makes your web experience smoother and more responsive — especially on slower connections or metered data plans.",
+        "withProHeading": "With AdShield Pro you get:",
+        "benefits": ["Faster page load times", "Reduced data usage", "Lower CPU & memory load", "Improved battery life on laptops & mobile"]
+      },
+      "simple": {
+        "h2": "🔧 Designed for Everyone — Simple, Yet Powerful",
+        "intro": "You don't have to be a tech expert to enjoy an ad-free and private web. AdShield Pro is built for users of all levels.",
+        "features": [
+          { "icon": "🚀", "heading": "One-Click Setup", "body": "Install and start blocking immediately — no complicated configurations." },
+          { "icon": "🔘", "heading": "Intuitive Controls", "items": ["Toggle blocking on or off", "Whitelist trusted sites", "Access advanced settings (Pro)", "Review blocked items"] },
+          { "icon": "🌐", "heading": "Per-Site Customization", "body": "Whitelist your favorite sites so you can support creators without suffering through intrusive ads elsewhere." }
+        ]
+      },
+      "why": {
+        "h2": "⭐ Why Choose AdShield Pro?",
+        "intro": "There are many ad blockers available — but AdShield Pro stands out because it combines powerful blocking, strict privacy, and lightning-fast performance into one clean package:",
+        "reasons": [
+          { "heading": "✔ 100% Local, Offline Ad Blocking", "body": "No external servers, no cloud-based filtering, and no data uploads." },
+          { "heading": "✔ Privacy First", "body": "No analytics, no trackers, no telemetry — ever." },
+          { "heading": "✔ Works Everywhere", "body": "Chrome, Edge, Firefox, Opera – AdShield Pro works seamlessly across major browsers." },
+          { "heading": "✔ One-Time Upgrade (Optional Pro)", "body": "Get premium features with a one-time purchase, not a recurring subscription. Lifetime access. No hidden fees." },
+          { "heading": "✔ Full Customization", "body": "Advanced users can fine-tune blocking rules, manage filter lists, and control exactly how content is handled.", "wide": true }
+        ]
+      },
+      "pro": {
+        "h2": "🌟 Pro Features — Take Control Like a Power User",
+        "intro": "The free version of AdShield Pro already delivers essential ad blocking and privacy protection. But if you want advanced control and customization, upgrading to AdShield Pro (Premium) unlocks powerful additional tools:",
+        "body": "Best of all? Pro is a one-time purchase, not a subscription — you pay once and get lifetime access to all premium capabilities.",
+        "pricingLink": "pricing and Free vs Pro",
+        "items": [
+          { "heading": "🔹 Advanced Custom Filter Rules", "body": "Design your own filter criteria to block or allow specific elements across sites." },
+          { "heading": "🔹 Cosmetic Filtering", "body": "Remove visual clutter like large banners, sponsored boxes, and disruptive page elements." },
+          { "heading": "🔹 Local Analytics & Insights", "body": "See how many ads and trackers have been blocked — all locally, without data leaving your device." },
+          { "heading": "🔹 Enhanced Whitelist Management", "body": "Set rules per domain, subdomain, path, or even specific page elements." },
+          { "heading": "🔹 Priority Support", "body": "Get priority assistance for issues, questions, and optimization." }
+        ],
+        "cta": "Upgrade to Pro (One-time)"
+      },
+      "howItWorks": {
+        "h2": "🧠 How It Works — Fast, Local, and Efficient",
+        "intro": "AdShield Pro uses an intelligent filtering engine that works offline on your device.",
+        "features": [
+          { "icon": "🖥️", "heading": "Local Filtering", "items": ["Instant rule matching", "Zero data leakage", "No remote logging"] },
+          { "icon": "📦", "heading": "Rule-Based Engine", "body": "Matches page elements and network requests against filter rules — all offline." },
+          { "icon": "🔄", "heading": "Automatic Updates", "body": "Filter lists are regularly updated to keep up with new ad and tracking techniques." }
+        ],
+        "outro": "The result? Faster decisions, stronger privacy, stronger blocking — all while keeping your data secure and private."
+      },
+      "benefits": {
+        "h2": "📈 Real Benefits for Real Users",
+        "intro": "Here's what you'll experience once AdShield Pro is active:",
+        "cards": [
+          { "heading": "💡 Clean & Focused Web Pages", "body": "No more ads interrupting your reading or watching experience." },
+          { "heading": "🛡️ Stronger Privacy", "body": "Trackers abandoned." },
+          { "heading": "🚀 Faster Load Times", "body": "Less clutter means pages open quickly." },
+          { "heading": "💰 Data Savings", "body": "Reduced unwanted downloads — especially valuable on limited data plans." },
+          { "heading": "🖱️ More Space for Content", "body": "With fewer ads and overlays, you see more of what you actually want." }
+        ]
+      },
+      "browsers": {
+        "h2": "🧩 Works Across Your Favorite Browsers",
+        "intro": "AdShield Pro supports all major Chromium-based browsers like:",
+        "list": ["Google Chrome", "Microsoft Edge", "Brave", "Opera"],
+        "outro1": "And it also works on Mozilla Firefox with the same privacy-first, high-performance blocking you expect.",
+        "outro2": "This means no matter what browser you choose, AdShield Pro helps you browse smarter."
+      },
+      "audience": {
+        "h2": "🌈 Beginner Friendly — Advanced Enough for Power Users",
+        "intro": "Whether you're new to ad blockers or you know exactly what you want, AdShield Pro adapts to your needs:",
+        "tiers": [
+          { "heading": "For Beginners", "body": "Instant protection, easy toggles, minimal learning curve." },
+          { "heading": "For Advanced Users", "body": "Custom filters, detailed control, and deep configuration options." }
+        ],
+        "outro": "You're in control — not your browser, and definitely not advertisers.",
+        "gettingStarted": {
+          "heading": "📥 Getting Started Is Easy",
+          "intro": "You're just a few clicks away from a cleaner, faster, and more private web:",
+          "steps": [
+            "Install AdShield Pro from the official website.",
+            "Activate blocking with one click.",
+            "Customize settings if you want refined control.",
+            "Enjoy browsing without interruptions, trackers, or eye-sore ads."
+          ],
+          "outro": "No accounts, no logins, no subscriptions — just privacy and performance.",
+          "ctaPrimary": "Download AdShield Pro",
+          "ctaSecondary": "Upgrade to Pro"
+        }
+      },
+      "testimonials": {
+        "h2": "📣 What Users Are Saying",
+        "intro": "Users around the world trust AdShield Pro to protect their privacy, block ads, and speed up their browsing experience — and you can too.",
+        "quotes": [
+          { "text": "\"AdShield Pro transformed my browser — pages load faster and I don't see those annoying ads anymore.\"", "author": "Satisfied User" },
+          { "text": "\"I was tired of trackers following me around. AdShield Pro gives me peace of mind.\"", "author": "Privacy Conscious Browser" }
+        ]
+      },
+      "privacyBuiltIn": {
+        "h2": "🔐 Your Privacy Is Built In",
+        "intro": "At AdShield Pro, privacy isn't an add-on — it's a foundation:",
+        "items": ["No data is collected", "No tracking of usage", "No cloud access to your browsing", "Your data stays on your device"],
+        "outro": "Unlike many competitors that sell user data or track behavior, AdShield Pro is strictly private by design.",
+        "ctaPrimary": "Add to Chrome",
+        "ctaSecondary": "Privacy Policy"
+      },
+      "faq": {
+        "h2": "💡 Frequently Asked Questions",
+        "intro": "Quick answers about pricing, privacy, and performance.",
+        "items": [
+          { "q": "Is AdShield Pro free?", "a": "Yes — the basic ad blocking and privacy protection are completely free." },
+          { "q": "Is there a subscription?", "a": "No — premium features are available for a one-time purchase, not a recurring subscription." },
+          { "q": "Does it track my data?", "a": "Absolutely not. AdShield Pro never collects or sends your personal browsing data." },
+          { "q": "Will it slow down my browser?", "a": "No — AdShield Pro runs locally and efficiently, increasing your browsing speed by removing unnecessary elements." }
+        ]
+      },
+      "cta": {
+        "h2": "🌐 Experience Better Browsing Today",
+        "body": "Say goodbye to annoying ads, hidden trackers, slow page loads, and data-draining scripts — and say hello to clean browsing, strong privacy, faster web pages, and full control over your experience.",
+        "ctaPrimary": "👉 Download AdShield Pro",
+        "ctaSecondary": "One-time upgrade (Pro)",
+        "summaryHeading": "📣 Final Summary – Why AdShield Pro?",
+        "summary1": "AdShield Pro is more than just an ad blocker — it's a complete suite of tools designed to block ads and trackers, speed up browsing, protect your privacy, give you total control, and deliver premium features with a one-time upgrade.",
+        "summary2": "No subscriptions. No telemetry. No compromises. Just the best browsing experience — powered by you."
+      }
+    },
+
+    "features": {
+      "meta": {
+        "title": "AdShield Pro Features — Total Ad Blocking & Privacy Protection",
+        "description": "AdShield Pro features: block ads everywhere, stop trackers, speed up pages, and protect privacy with offline-first, local-only filtering and per-site controls.",
+        "canonical": "https://adshieldpro.org/features",
+        "ogTitle": "AdShield Pro Features — Total Ad Blocking & Privacy Protection",
+        "ogDescription": "Block ads and trackers, protect privacy, and browse faster with offline-first, local-only filtering and powerful per-site controls.",
+        "ogType": "website",
+        "ogUrl": "https://adshieldpro.org/features",
+        "robots": "index,follow"
+      },
+      "h1": "🌐 AdShield Pro Features – Total Ad Blocking & Privacy Protection",
+      "intro1": "Welcome to AdShield Pro, the modern ad blocker and privacy extension designed to give you fast, clean, and secure browsing — without tracking, subscriptions, or slowdowns. Built offline-first and running locally on your device, AdShield Pro puts you in complete control of what loads in your browser.",
+      "intro2": "Whether you're tired of intrusive ads, want to stop trackers in their tracks, or simply want a smoother web experience, AdShield Pro delivers powerful features that protect your privacy and improve performance. Below, you'll find a complete breakdown of everything AdShield Pro can do — from core blocking right through to advanced customization and privacy protections.",
+      "backToHome": "← Back to home"
+    },
+
+    "pricing": {
+      "meta": {
+        "title": "AdShield Pro Pricing — Free Ad Blocker & One-Time Pro Upgrade",
+        "description": "AdShield Pro pricing: start free, then unlock Pro features with a one-time lifetime upgrade (no subscription). Compare Free vs Pro and choose your level of control.",
+        "canonical": "https://adshieldpro.org/pricing",
+        "ogTitle": "AdShield Pro Pricing — Free & One-Time Pro Upgrade (No Subscription)",
+        "ogDescription": "Start free, then upgrade once for lifetime access to Pro controls. Compare Free vs Pro features and choose the right level of control.",
+        "ogType": "website",
+        "ogUrl": "https://adshieldpro.org/pricing",
+        "robots": "index,follow"
+      },
+      "h1": "Pricing & Upgrade",
+      "intro": "Install AdShield Pro for free, then upgrade any time to unlock Pro controls with a one-time lifetime payment. No subscription, no recurring charges.",
+      "featuresLink": "features breakdown",
+      "upgradeNote": "One-time payment • No subscription",
+      "upgradeSubNote": "Pricing is managed on Gumroad and may change over time.",
+      "upgradeBtn": "Upgrade via Gumroad",
+      "free": {
+        "heading": "Free",
+        "tagline": "Core blocking and essential controls.",
+        "price": "$0",
+        "priceSub": "install from the Chrome Web Store",
+        "cta": "Add to Chrome (Free)",
+        "items": ["Ad & tracker blocking (rule-based)", "Basic page cleanup", "Local settings storage", "No account required"]
+      },
+      "pro": {
+        "heading": "Pro (Lifetime)",
+        "tagline": "For users who want deeper control and extra protection.",
+        "price": "See Gumroad",
+        "priceSub": "pricing and receipts are handled by Gumroad",
+        "highlights": {
+          "heading": "Pro highlights",
+          "items": ["Advanced blocking controls", "Cosmetic filtering (cleaner layouts)", "Performance & data saver options", "Lifetime access (one-time upgrade)"]
+        },
+        "comparison": {
+          "heading": "Free vs Pro",
+          "rows": [
+            { "feature": "Blocks ads & trackers", "tier": "Free + Pro" },
+            { "feature": "Allowlist / per-site control", "tier": "Free + Pro" },
+            { "feature": "Cosmetic filtering controls", "tier": "Pro" },
+            { "feature": "Data saver / performance tuning", "tier": "Pro" },
+            { "feature": "Priority activation help", "tier": "Pro" }
+          ]
+        },
+        "cta": "Upgrade via Gumroad",
+        "licenseNote": "After purchase, you enter your license key in the extension to activate Pro.",
+        "privacyNote": "Read how your data is handled in our",
+        "privacyLink": "Privacy Policy"
+      },
+      "backToHome": "← Back to home"
+    },
+
+    "privacy": {
+      "meta": {
+        "title": "AdShield Pro Privacy Policy — No Tracking, No Analytics",
+        "description": "AdShield Pro privacy policy: no analytics, no tracking, and no personal data collection. Blocking runs locally on your device with local-only settings.",
+        "canonical": "https://adshieldpro.org/privacy",
+        "ogTitle": "AdShield Pro Privacy Policy — No Tracking, No Analytics",
+        "ogDescription": "AdShield Pro is privacy-first: no analytics, no tracking, and no personal data collection. Learn how data is handled.",
+        "ogType": "article",
+        "ogUrl": "https://adshieldpro.org/privacy",
+        "robots": "index,follow"
+      },
+      "h1": "Privacy Policy – AdShield Pro",
+      "lastUpdated": "2025",
+      "backToHome": "← Back to home"
+    },
+
+    "support": {
+      "meta": {
+        "title": "AdShield Pro Support — Installation, Activation & Troubleshooting",
+        "description": "AdShield Pro support: installation help, Pro license activation, troubleshooting steps, and contact info. Get assistance in 1–3 business days.",
+        "canonical": "https://adshieldpro.org/support",
+        "ogTitle": "AdShield Pro Support — Installation, Activation & Troubleshooting",
+        "ogDescription": "Need help with AdShield Pro? Find installation steps, Pro activation help, troubleshooting tips, and contact information.",
+        "ogType": "website",
+        "ogUrl": "https://adshieldpro.org/support",
+        "robots": "index,follow"
+      },
+      "h1": "Support",
+      "intro": "Get help with installation, Pro activation, troubleshooting, and account-free setup. If you need support, email us and we typically respond in 1–3 business days.",
+      "contact": {
+        "heading": "Contact",
+        "email": "support@adshieldpro.org",
+        "website": "https://adshieldpro.org",
+        "responseTime": "Typically 1–3 business days"
+      },
+      "activatePro": {
+        "heading": "Activate Pro",
+        "steps": [
+          { "heading": "1) Purchase on Gumroad", "body": "Use the upgrade link on the Pricing page. Gumroad will provide your license key." },
+          { "heading": "2) Enter your license key in the extension", "body": "Open AdShield Pro → Upgrade/License → paste the key → verify." },
+          { "heading": "3) Works offline after activation", "body": "License verification is user-initiated. The result is stored locally on your device." }
+        ]
+      },
+      "troubleshooting": {
+        "heading": "Troubleshooting",
+        "items": [
+          { "q": "Extension not showing in the toolbar?", "a": "Chrome menu → Extensions → Pin AdShield Pro." },
+          { "q": "Ads still visible on a site?", "a": "Reload the page, check if the site is allowlisted, and confirm AdShield Pro is enabled for that tab." },
+          { "q": "A site breaks after blocking?", "a": "Temporarily disable on that site or add it to your allowlist, then refresh." },
+          { "q": "Pro key not activating?", "a": "Double-check for extra spaces, confirm you're using the latest extension version, and try verifying again. If it still fails, email support with your Gumroad receipt/order details." }
+        ]
+      },
+      "faq": {
+        "heading": "FAQ",
+        "items": [
+          { "q": "How do I uninstall?", "a": "Chrome → Extensions → Manage Extensions → Remove." },
+          { "q": "Does AdShield Pro collect any data?", "a": "No personal data, no tracking, and no analytics. Settings are stored locally on your device." },
+          { "q": "How do I upgrade later?", "a": "You can upgrade any time from the Pricing page. Pro is a one-time purchase (no subscription)." }
+        ]
+      },
+      "backToHome": "← Back to home"
+    },
+
+    "terms": {
+      "meta": {
+        "title": "AdShield Pro Terms of Use — Website & Extension Terms",
+        "description": "Read the AdShield Pro Terms of Use for the browser extension and website, including licensing, Pro activation, payments, and limitations.",
+        "canonical": "https://adshieldpro.org/terms",
+        "ogTitle": "AdShield Pro Terms of Use — Website & Extension Terms",
+        "ogDescription": "Read the AdShield Pro Terms of Use for the browser extension and website, including licensing, Pro activation, payments, and limitations.",
+        "ogType": "article",
+        "ogUrl": "https://adshieldpro.org/terms",
+        "robots": "index,follow"
+      },
+      "h1": "Terms of Use – AdShield Pro",
+      "lastUpdated": "2025",
+      "backToHome": "← Back to home"
+    },
+
+    "adBlocker": {
+      "meta": {
+        "title": "AdShield Pro Ad Blocker — Block Ads Everywhere (Privacy-First)",
+        "description": "AdShield Pro is a fast, privacy-first ad blocker that blocks ads across websites using offline-first, local-only filtering. No tracking, no telemetry, no subscriptions.",
+        "canonical": "https://adshieldpro.org/ad-blocker",
+        "ogTitle": "AdShield Pro Ad Blocker — Block Ads Everywhere (Privacy-First)",
+        "ogDescription": "Block ads everywhere with local-only filtering. Private by design: no tracking, no telemetry.",
+        "ogType": "website",
+        "ogUrl": "https://adshieldpro.org/ad-blocker",
+        "robots": "index,follow"
+      },
+      "eyebrow": "Privacy-first ad blocking",
+      "h1": "Block Ads Everywhere — Without Tracking You",
+      "intro": "AdShield Pro is built for people who want clean browsing and real privacy. Blocking happens locally on your device using offline-first rules — so your browsing stays yours.",
+      "ctaPrimary": "Get AdShield Pro",
+      "ctaSecondary": "See features",
+      "whatItBlocks": {
+        "heading": "What it blocks",
+        "items": ["Banner ads and sponsored blocks", "Pop-ups and overlays", "Auto-play and intrusive page elements", "Common ad scripts and third-party embeds"]
+      },
+      "whyDifferent": {
+        "heading": "Why it's different",
+        "body": "Unlike ad blockers that rely on cloud syncing or telemetry, AdShield Pro focuses on local-only filtering and per-site controls.",
+        "privacyLink": "privacy policy",
+        "howToLink": "How to Block Ads on Chrome",
+        "fixLink": "How to Fix Broken Sites"
+      },
+      "moreControl": {
+        "h2": "Want more control?",
+        "body": "Start free, then unlock advanced controls with a one-time Pro upgrade — no subscription.",
+        "pricingLink": "pricing page"
+      },
+      "cta": {
+        "h2": "Clean browsing, by default",
+        "body": "Install AdShield Pro and browse faster with less distraction — while keeping your data private.",
+        "ctaPrimary": "Add to Chrome",
+        "ctaSecondary": "Get help"
+      }
+    },
+
+    "trackerBlocker": {
+      "meta": {
+        "title": "AdShield Pro Tracker Blocker — Stop Trackers (Local-Only Privacy)",
+        "description": "Stop trackers and reduce third-party surveillance with AdShield Pro. Offline-first, local-only privacy protection — no tracking, no analytics, no telemetry.",
+        "canonical": "https://adshieldpro.org/tracker-blocker",
+        "ogTitle": "AdShield Pro Tracker Blocker — Stop Trackers (Local-Only Privacy)",
+        "ogDescription": "Block tracking scripts with local-only protection. No tracking, no analytics, no telemetry.",
+        "ogType": "website",
+        "ogUrl": "https://adshieldpro.org/tracker-blocker",
+        "robots": "index,follow"
+      },
+      "eyebrow": "Local-only privacy protection",
+      "h1": "Stop Trackers and Third-Party Surveillance",
+      "intro": "Most websites load tracking scripts that follow you across the web. AdShield Pro helps reduce tracking by blocking common tracker requests and scripts — and it does it locally on your device.",
+      "ctaPrimary": "Get AdShield Pro",
+      "ctaSecondary": "Read the privacy policy",
+      "whatBlocked": {
+        "heading": "What gets blocked",
+        "items": ["Common third-party tracking scripts", "Pixels and analytics-style beacons", "Tracker requests embedded in ads", "Cross-site tracking endpoints (where possible)"]
+      },
+      "privacyFirst": {
+        "heading": "Privacy-first defaults",
+        "body": "AdShield Pro is designed around a simple promise: no tracking and no telemetry.",
+        "privacyLink": "Privacy"
+      },
+      "pairWith": {
+        "h2": "Pair it with ad blocking",
+        "body": "Tracking and ads usually ship together. See how AdShield Pro combines both on our",
+        "adBlockerLink": "Ad Blocker",
+        "howToLink": "How to Stop Trackers",
+        "fixLink": "How to Fix Broken Sites"
+      },
+      "cta": {
+        "h2": "Browse faster, with less tracking",
+        "body": "Install AdShield Pro and reduce trackers without giving up your privacy.",
+        "ctaPrimary": "Add to Chrome",
+        "ctaSecondary": "Get help"
+      }
+    },
+
+    "lifetimeUpgrade": {
+      "meta": {
+        "title": "AdShield Pro Lifetime Upgrade — One-Time Purchase (No Subscription)",
+        "description": "Upgrade AdShield Pro with a one-time lifetime purchase (no subscription). Unlock Pro controls and advanced filtering, with offline-first, local-only privacy.",
+        "canonical": "https://adshieldpro.org/lifetime-upgrade",
+        "ogTitle": "AdShield Pro Lifetime Upgrade — One-Time Purchase (No Subscription)",
+        "ogDescription": "A one-time lifetime upgrade to unlock Pro controls — no subscription.",
+        "ogType": "website",
+        "ogUrl": "https://adshieldpro.org/lifetime-upgrade",
+        "robots": "index,follow"
+      },
+      "eyebrow": "One-time upgrade",
+      "h1": "Lifetime Pro Upgrade — No Subscription",
+      "intro": "AdShield Pro is free to start. When you're ready for advanced controls, upgrade once and keep Pro forever. No recurring fees.",
+      "ctaPrimary": "Upgrade on Gumroad",
+      "ctaSecondary": "Compare Free vs Pro",
+      "whatYouGet": {
+        "heading": "What you get with Pro",
+        "items": ["Advanced blocking controls and customization", "Per-site settings for more flexibility", "More control over filtering behavior", "License-based activation (works offline)"]
+      },
+      "whyOnce": {
+        "heading": "Why a one-time purchase?",
+        "body": "Subscriptions are everywhere. We keep it simple: upgrade once, use it long-term. For details about activation and licensing, visit",
+        "supportLink": "Support"
+      },
+      "startFree": {
+        "h2": "Prefer to start free?",
+        "body": "Install the free version first, then upgrade later. See the core capabilities on",
+        "featuresLink": "Features",
+        "privacyLink": "Privacy",
+        "howToLink": "How to Block Ads on Chrome",
+        "fixLink": "How to Fix Broken Sites"
+      },
+      "cta": {
+        "h2": "Upgrade once. Keep Pro.",
+        "body": "Unlock Pro controls with a lifetime upgrade on Gumroad.",
+        "ctaPrimary": "Buy Lifetime",
+        "ctaSecondary": "View pricing"
+      }
+    },
+
+    "howToBlockAds": {
+      "meta": {
+        "title": "How to Block Ads on Chrome — Fast, Privacy-First Setup",
+        "description": "Learn how to block ads on Chrome in minutes. Install AdShield Pro, enable blocking, and fine-tune per-site controls — with offline-first, local-only privacy.",
+        "canonical": "https://adshieldpro.org/how-to-block-ads-on-chrome",
+        "ogTitle": "How to Block Ads on Chrome — Fast, Privacy-First Setup",
+        "ogDescription": "Step-by-step: install AdShield Pro, enable blocking, and customize per site — local-only privacy.",
+        "ogType": "website",
+        "ogUrl": "https://adshieldpro.org/how-to-block-ads-on-chrome",
+        "robots": "index,follow"
+      },
+      "eyebrow": "Chrome setup guide",
+      "h1": "How to Block Ads on Chrome",
+      "intro": "If you're looking for a simple way to reduce ads and improve browsing speed, installing a trusted ad blocker is the fastest option. Below is a quick, privacy-first setup using AdShield Pro.",
+      "steps": [
+        {
+          "heading": "1) Install the extension",
+          "body": "Install AdShield Pro from the Chrome Web Store, then pin it so it's easy to access.",
+          "cta": "Install from Chrome Web Store"
+        },
+        {
+          "heading": "2) Confirm blocking is enabled",
+          "body": "Open a site with ads and reload. If ads remain, check that the site is not allowlisted and that the extension is enabled for the tab.",
+          "support": "Support"
+        },
+        {
+          "heading": "3) Customize per-site controls",
+          "body": "Some sites break when blocking is too aggressive. Use per-site controls to disable blocking or allowlist a site when needed, then refresh.",
+          "features": "Features"
+        },
+        {
+          "heading": "4) Keep it private",
+          "body": "Choose tools that don't profile you. AdShield Pro is designed for offline-first, local-only filtering with no tracking or analytics.",
+          "privacy": "Privacy Policy"
+        }
+      ],
+      "related": {
+        "h2": "Related reading",
+        "body": "If you're also trying to reduce tracking, see",
+        "stopTrackers": "How to Stop Trackers",
+        "trackerBlocker": "Tracker Blocker"
+      },
+      "cta": {
+        "h2": "Ready to browse without ads?",
+        "body": "Install AdShield Pro and keep blocking local and private.",
+        "ctaPrimary": "Add to Chrome",
+        "ctaSecondary": "See pricing"
+      }
+    },
+
+    "howToStopTrackers": {
+      "meta": {
+        "title": "How to Stop Trackers — Reduce Tracking in Your Browser",
+        "description": "Learn practical steps to stop trackers: block third-party scripts, limit cross-site tracking, and browse more privately using AdShield Pro's local-only protection.",
+        "canonical": "https://adshieldpro.org/how-to-stop-trackers",
+        "ogTitle": "How to Stop Trackers — Reduce Tracking in Your Browser",
+        "ogDescription": "Practical steps to reduce trackers and third-party surveillance — privacy-first and local-only.",
+        "ogType": "website",
+        "ogUrl": "https://adshieldpro.org/how-to-stop-trackers",
+        "robots": "index,follow"
+      },
+      "eyebrow": "Privacy guide",
+      "h1": "How to Stop Trackers",
+      "intro": "Trackers are invisible scripts and requests that follow you across websites. A good privacy setup reduces tracker requests, limits fingerprinting, and avoids tools that collect browsing telemetry.",
+      "steps": [
+        {
+          "heading": "1) Block common tracker requests",
+          "body": "Use a privacy-first blocker that runs locally. AdShield Pro is designed for offline-first, local-only filtering so your browsing activity isn't shipped elsewhere.",
+          "link": "Tracker Blocker"
+        },
+        {
+          "heading": "2) Reduce third-party cookies",
+          "body": "Browsers increasingly restrict third-party cookies, but you can still review your privacy settings and clear site data for services you don't trust."
+        },
+        {
+          "heading": "3) Avoid \"free\" tools that track you",
+          "body": "Many tools monetize by collecting usage analytics. Prefer extensions that clearly state \"no tracking, no telemetry.\"",
+          "link": "Privacy Policy"
+        },
+        {
+          "heading": "4) Fix sites that break",
+          "body": "Some sites depend on third-party scripts. When something breaks, try disabling blocking for that site, then refresh.",
+          "link": "Fix broken sites"
+        }
+      ],
+      "related": {
+        "h2": "Related reading",
+        "body": "Want to reduce ads too? See",
+        "howToBlock": "How to Block Ads on Chrome",
+        "adBlocker": "Ad Blocker"
+      },
+      "cta": {
+        "h2": "Make privacy your default",
+        "body": "Install AdShield Pro for local-only protection against common tracking requests.",
+        "ctaPrimary": "Add to Chrome",
+        "ctaSecondary": "Get help"
+      }
+    },
+
+    "howToFixSites": {
+      "meta": {
+        "title": "How to Fix Broken Sites After Ad Blocking (Allowlist & Per-Site Controls)",
+        "description": "If a website breaks after blocking ads or trackers, use per-site controls and allowlisting. Learn step-by-step troubleshooting with AdShield Pro.",
+        "canonical": "https://adshieldpro.org/how-to-fix-sites-after-blocking",
+        "ogTitle": "How to Fix Broken Sites After Ad Blocking (Allowlist & Per-Site Controls)",
+        "ogDescription": "Step-by-step troubleshooting: reload, disable blocking for a site, and use allowlisting to restore functionality.",
+        "ogType": "website",
+        "ogUrl": "https://adshieldpro.org/how-to-fix-sites-after-blocking",
+        "robots": "index,follow"
+      },
+      "eyebrow": "Troubleshooting guide",
+      "h1": "How to Fix Broken Sites After Blocking",
+      "intro": "If a website doesn't load correctly after blocking ads/trackers, it usually depends on a third-party script. The fix is typically a quick per-site adjustment.",
+      "steps": [
+        {
+          "heading": "1) Reload and check the extension state",
+          "body": "Reload the page first. Then confirm AdShield Pro is enabled for the current tab and the site isn't allowlisted."
+        },
+        {
+          "heading": "2) Disable blocking for that site",
+          "body": "If the site relies on blocked scripts, temporarily disable blocking for that site and refresh. This is the fastest way to confirm the cause."
+        },
+        {
+          "heading": "3) Use allowlisting when needed",
+          "body": "If you trust the site and it keeps breaking, add it to your allowlist so it always works. You can remove it later."
+        },
+        {
+          "heading": "4) Still stuck? Get help",
+          "body": "Some sites require more tuning. Use the support page for next steps and contact details.",
+          "cta": "Support"
+        }
+      ],
+      "related": {
+        "h2": "Related reading",
+        "body": "To understand what's being blocked, see",
+        "adBlocker": "Ad Blocker",
+        "trackerBlocker": "Tracker Blocker"
+      },
+      "cta": {
+        "h2": "Control per site, keep privacy local",
+        "body": "AdShield Pro gives you per-site controls so you can balance blocking and compatibility.",
+        "ctaPrimary": "See features",
+        "ctaSecondary": "Upgrade to Pro"
+      }
+    },
+
+    "notFound": {
+      "meta": {
+        "title": "Page Not Found — AdShield Pro",
+        "description": "Sorry, we couldn't find that page. Explore AdShield Pro features, pricing, privacy, and support.",
+        "robots": "noindex,follow"
+      },
+      "badge": "404 • Page not found",
+      "h1": "This page doesn't exist.",
+      "body": "The link may be broken, or the page may have been moved. Use the links below to get back on track.",
+      "cards": [
+        { "heading": "Go to Home", "sub": "Start from the main page.", "href": "/" },
+        { "heading": "View Features", "sub": "See what AdShield Pro can do.", "href": "/features" },
+        { "heading": "Pricing", "sub": "Free vs Pro (one-time upgrade).", "href": "/pricing" },
+        { "heading": "Support", "sub": "Get help and troubleshooting.", "href": "/support" }
+      ],
+      "backToHome": "← Back to home"
+    }
+  }
+}

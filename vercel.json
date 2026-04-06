@@ -1,6 +1,6 @@
 {
   "framework": null,
-  "outputDirectory": "_site",
+  "outputDirectory": "site",
   "installCommand": "npm install",
   "buildCommand": "npx @11ty/eleventy",
   "redirects": [
