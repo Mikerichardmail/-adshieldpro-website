@@ -1,0 +1,14 @@
+:root{color-scheme:light} 
+html{scroll-behavior:smooth}
+/* subtle background grid */
+.bg-grid{background-image:radial-gradient(rgba(15,23,42,.08) 1px,transparent 1px);background-size:18px 18px}
+/* nicer focus outline */
+:focus-visible{outline:2px solid rgba(59,130,246,.9);outline-offset:2px}
+/* container max width */
+.container{max-width:1120px}
+/* small helpers */
+.text-balance{text-wrap:balance}
+.shadow-soft{box-shadow:0 10px 30px rgba(2,6,23,.08)}
+.card{background:rgba(255,255,255,.75);backdrop-filter:saturate(180%) blur(10px);border:1px solid rgba(15,23,42,.08)}
+.badge{border:1px solid rgba(15,23,42,.10);background:rgba(15,23,42,.03)}
+.hr{border-top:1px solid rgba(15,23,42,.10)}

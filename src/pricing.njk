@@ -1,0 +1,93 @@
+---
+layout: layouts/base.njk
+lang: en
+pageKey: pricing
+headerCtaInstallFree: true
+permalink: /pricing.html
+---
+{% set t = i18n[lang] %}
+{% set p = t.pages.pricing %}
+{% set meta = p.meta %}
+
+<div class="bg-grid">
+  {% include "partials/header.njk" %}
+
+  <main class="container mx-auto px-4 py-10 md:py-14">
+    <div class="max-w-5xl">
+      <h1 class="text-3xl md:text-4xl font-semibold tracking-tight">{{ p.h1 }}</h1>
+      <p class="mt-3 text-slate-700 max-w-3xl">{{ p.intro }} Want details on what's included? See the full <a class="font-semibold text-slate-900 hover:underline" href="/features">{{ p.featuresLink }}</a>.</p>
+
+      <div class="mt-6 rounded-3xl p-6 md:p-8 bg-white border border-slate-900/10 shadow-soft">
+        <div class="flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+          <div>
+            <div class="text-sm font-semibold text-slate-900">{{ p.upgradeNote }}</div>
+            <div class="mt-1 text-sm text-slate-700">{{ p.upgradeSubNote }}</div>
+          </div>
+          <a class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800" href="{{ site.gumroadUrl }}" target="_blank" rel="noreferrer">{{ p.upgradeBtn }}</a>
+        </div>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+        <section class="rounded-3xl p-8 card shadow-soft">
+          <h2 class="text-2xl font-semibold tracking-tight">{{ p.free.heading }}</h2>
+          <p class="mt-2 text-slate-700">{{ p.free.tagline }}</p>
+          <div class="mt-6">
+            <div class="text-4xl font-semibold">{{ p.free.price }}</div>
+            <div class="mt-1 text-sm text-slate-600">{{ p.free.priceSub }}</div>
+          </div>
+          <a class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800" href="{{ site.chromeStoreUrl }}" target="_blank" rel="noreferrer">{{ p.free.cta }}</a>
+          <ul class="mt-6 grid gap-2 text-sm text-slate-700 list-disc pl-5">
+            {% for item in p.free.items %}<li>{{ item }}</li>{% endfor %}
+          </ul>
+        </section>
+
+        <section class="rounded-3xl p-8 bg-white border border-slate-900/10 shadow-soft" id="upgrade">
+          <h2 class="text-2xl font-semibold tracking-tight">{{ p.pro.heading }}</h2>
+          <p class="mt-2 text-slate-700">{{ p.pro.tagline }}</p>
+          <div class="mt-6">
+            <div class="text-4xl font-semibold">{{ p.pro.price }}</div>
+            <div class="mt-1 text-sm text-slate-600">{{ p.pro.priceSub }}</div>
+          </div>
+
+          <div class="mt-6 rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+            <div class="text-sm font-semibold">{{ p.pro.highlights.heading }}</div>
+            <ul class="mt-3 grid gap-2 text-sm text-slate-700 list-disc pl-5">
+              {% for item in p.pro.highlights.items %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+          </div>
+
+          <div class="mt-6 rounded-2xl p-5 bg-slate-50 border border-slate-900/10">
+            <div class="text-sm font-semibold">{{ p.pro.comparison.heading }}</div>
+            <div class="mt-4 grid gap-3 text-sm text-slate-700">
+              {% for row in p.pro.comparison.rows %}
+              <div class="flex items-start justify-between gap-4">
+                <div class="font-medium">{{ row.feature }}</div>
+                <div class="text-slate-600">{{ row.tier }}</div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <a class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800" href="{{ site.gumroadUrl }}" target="_blank" rel="noreferrer">{{ p.pro.cta }}</a>
+          <p class="mt-3 text-xs text-slate-600">{{ p.pro.licenseNote }}</p>
+          <p class="mt-4 text-sm text-slate-700">{{ p.pro.privacyNote }} <a class="font-semibold text-slate-900 hover:underline" href="/privacy">{{ p.pro.privacyLink }}</a>.</p>
+        </section>
+      </div>
+
+      <section class="mt-8 rounded-3xl p-6 md:p-8 bg-white border border-slate-900/10 shadow-soft">
+        <h2 class="text-lg font-semibold">Explore more</h2>
+        <p class="mt-2 text-sm text-slate-700">Related pages for features, privacy details, and help.</p>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <a class="rounded-2xl p-5 card shadow-soft hover:bg-white" href="/features"><div class="text-sm font-semibold">Features</div><p class="mt-1 text-sm text-slate-700">See everything AdShield Pro can do (Free + Pro).</p></a>
+          <a class="rounded-2xl p-5 card shadow-soft hover:bg-white" href="/privacy"><div class="text-sm font-semibold">Privacy</div><p class="mt-1 text-sm text-slate-700">Local-only processing with no tracking or analytics.</p></a>
+          <a class="rounded-2xl p-5 card shadow-soft hover:bg-white" href="/support"><div class="text-sm font-semibold">Support</div><p class="mt-1 text-sm text-slate-700">Activation, setup, and troubleshooting help.</p></a>
+          <a class="rounded-2xl p-5 card shadow-soft hover:bg-white" href="/"><div class="text-sm font-semibold">Home</div><p class="mt-1 text-sm text-slate-700">Overview of AdShield Pro and key benefits.</p></a>
+        </div>
+      </section>
+
+      <div class="mt-8 text-sm"><a class="text-slate-700 hover:text-slate-900" href="/">{{ p.backToHome }}</a></div>
+    </div>
+  </main>
+
+  {% include "partials/footer.njk" %}
+</div>

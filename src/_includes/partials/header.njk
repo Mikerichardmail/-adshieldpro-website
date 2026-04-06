@@ -1,0 +1,41 @@
+{% set t = i18n[lang] %}
+<header class="sticky top-0 z-50 border-b border-slate-900/10 bg-white/70 backdrop-blur">
+  <div class="container mx-auto px-4">
+    <div class="flex h-16 items-center justify-between gap-4">
+      <a class="flex items-center gap-2" href="/" aria-label="Home">
+        <img class="h-9 w-9 rounded-xl" src="/icon.svg" alt="{{ site.name }}" />
+        <span class="font-semibold tracking-tight">{{ site.name }}</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-slate-950 text-slate-700" href="/features">{{ t.nav.features }}</a>
+        <a class="hover:text-slate-950 text-slate-700" href="/pricing">{{ t.nav.pricing }}</a>
+        <a class="hover:text-slate-950 text-slate-700" href="/privacy">{{ t.nav.privacy }}</a>
+        <a class="hover:text-slate-950 text-slate-700" href="/support">{{ t.nav.support }}</a>
+        <div class="relative group">
+          <button class="inline-flex items-center gap-1 text-slate-700 hover:text-slate-950" type="button">
+            {{ t.nav.platform }}
+            <span class="text-xs">▾</span>
+          </button>
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
+            <div class="min-w-56 rounded-xl border border-slate-900/10 bg-white shadow-soft p-2">
+              {% for pl in t.platformLinks %}
+              <a class="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-900/5" href="{{ pl.href }}" target="_blank" rel="noreferrer">{{ pl.label }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        {% if headerCtaUpgrade %}
+        <a class="hidden sm:inline-flex rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-900/5" href="{{ site.gumroadUrl }}" target="_blank" rel="noreferrer">{{ t.nav.upgrade }}</a>
+        {% endif %}
+        {% if headerCtaInstallFree %}
+        <a class="hidden sm:inline-flex rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-900/5" href="{{ site.chromeStoreUrl }}" target="_blank" rel="noreferrer">{{ t.nav.installFree }}</a>
+        {% endif %}
+        <a class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-800" href="{{ site.chromeStoreUrl }}" target="_blank" rel="noreferrer">{{ t.nav.addToChrome }}</a>
+      </div>
+    </div>
+  </div>
+</header>
