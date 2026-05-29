@@ -26,6 +26,35 @@
   <meta name="twitter:image" content="{{ site.ogImage }}" />
   {% endif %}
 
+  <!-- Global Organization & WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "{{ site.url | default('https://adshieldpro.org') }}/#organization",
+        "name": "{{ site.name | default('AdShield Pro') }}",
+        "url": "{{ site.url | default('https://adshieldpro.org') }}/",
+        "email": "{{ site.email | default('support@adshieldpro.org') }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url | default('https://adshieldpro.org') }}/icon.svg"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url | default('https://adshieldpro.org') }}/#website",
+        "url": "{{ site.url | default('https://adshieldpro.org') }}/",
+        "name": "{{ site.name | default('AdShield Pro') }}",
+        "publisher": {
+          "@id": "{{ site.url | default('https://adshieldpro.org') }}/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
   {% if jsonld %}
   <script type="application/ld+json">{{ jsonld | safe }}</script>
   {% endif %}

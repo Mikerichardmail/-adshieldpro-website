@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "site/ui-image.png": "ui-image.png" });
   eleventyConfig.addPassthroughCopy({ "site/robots.txt": "robots.txt" });
   eleventyConfig.addPassthroughCopy({ "site/sitemap.xml": "sitemap.xml" });
+  eleventyConfig.addPassthroughCopy({ "site/llms.txt": "llms.txt" });
 
   eleventyConfig.addShortcode("inlineFile", function (filePath) {
     const absolutePath = path.join(__dirname, filePath);

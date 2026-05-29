@@ -1,0 +1,29 @@
+# AdShield Pro
+
+AdShield Pro is a free, lightweight, privacy-focused browser extension that blocks advertisements, stops invisible trackers, prevents browser fingerprinting, and improves page load performance. It runs entirely locally on the user's device with no cloud-based processing, data collection, or telemetry.
+
+## Core Features
+
+- **Ad Blocking Everywhere:** Automatically intercepts and removes display banner ads, overlay popups, autoplay video ads, and sponsored frames on all websites.
+- **Tracker Blocking:** Stops third-party analytics pixels, behavioral tracking scripts, and cross-site cookie identifiers before they can load.
+- **Offline-First & Private:** All filtering and ruleset evaluations are done locally inside the browser. No usage statistics, browsing history, or telemetry data leave the device.
+- **Manifest V3 Native:** Built from the ground up to utilize Chromium's native `declarativeNetRequest` (DNR) API for extremely fast, secure, and future-proof filtering.
+- **Cosmetic Filtering:** Cleanly collapses hidden elements and blank spaces left behind by blocked advertisements to preserve page layout integrity.
+- **No Acceptable Ads:** Does not participate in any paid ad-allowlist programs. If a script or resource is identified as an ad or tracker, it is blocked.
+
+## System Architecture & Technical Information
+
+AdShield Pro operates at the application layer inside standard web browsers. It compiles curated, high-performance rule sets into optimized JSON formats matching the browser's declarative netting APIs, avoiding standard runtime javascript overhead and maximizing CPU efficiency.
+
+- **Storage Isolation:** Automatically blocks common cross-site identification tracking vectors in local storage, sessionStorage, IndexedDB, and HSTS headers.
+- **Protocol Protections:** Recommends and guides users to utilize DNS-over-HTTPS (DoH) and HTTPS-Only upgrades to protect domain lookups against ISP logging.
+- **WebRTC Protection:** Spoofs STUN queries to prevent WebRTC peer connections from leaking local and WAN IP addresses behind active VPN configurations.
+
+## Primary Resources & Links
+
+- [Homepage](https://adshieldpro.org/) - Overview, download links, and installation guides.
+- [Features](https://adshieldpro.org/features) - Complete technical breakdown of blocking systems, privacy layers, and custom filtering.
+- [Pricing](https://adshieldpro.org/pricing) - Core blocker is completely free. Details of the optional one-time Pro upgrade (custom rules, advanced whitelists, local stats dashboard).
+- [Privacy Policy](https://adshieldpro.org/privacy) - Local-only processing architecture and zero telemetry commitment.
+- [Blog](https://adshieldpro.org/blog) - Technical guides, privacy tutorials, and security news.
+- [Support](https://adshieldpro.org/support) - Setup assistance, troubleshooting FAQs, and custom filtering help.

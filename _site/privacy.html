@@ -26,6 +26,35 @@
   <meta name="twitter:image" content="https://adshieldpro.org/ui-image.png" />
   
 
+  <!-- Global Organization & WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://adshieldpro.org/#organization",
+        "name": "AdShield Pro",
+        "url": "https://adshieldpro.org/",
+        "email": "support@adshieldpro.org",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://adshieldpro.org/icon.svg"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://adshieldpro.org/#website",
+        "url": "https://adshieldpro.org/",
+        "name": "AdShield Pro",
+        "publisher": {
+          "@id": "https://adshieldpro.org/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
   
 
   <style>

@@ -26,6 +26,35 @@
   <meta name="twitter:image" content="https://adshieldpro.org/ui-image.png" />
   
 
+  <!-- Global Organization & WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://adshieldpro.org/#organization",
+        "name": "AdShield Pro",
+        "url": "https://adshieldpro.org/",
+        "email": "support@adshieldpro.org",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://adshieldpro.org/icon.svg"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://adshieldpro.org/#website",
+        "url": "https://adshieldpro.org/",
+        "name": "AdShield Pro",
+        "publisher": {
+          "@id": "https://adshieldpro.org/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
   
 
   <style>
@@ -42,6 +71,24 @@
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Organization", "@id": "https://adshieldpro.org/#organization", "name": "AdShield Pro", "url": "https://adshieldpro.org/", "email": "support@adshieldpro.org", "logo": { "@type": "ImageObject", "url": "https://adshieldpro.org/icon.svg" } },
+    { "@type": "WebSite", "@id": "https://adshieldpro.org/#website", "url": "https://adshieldpro.org/", "name": "AdShield Pro", "publisher": { "@id": "https://adshieldpro.org/#organization" } },
+    { "@type": "WebPage", "@id": "https://adshieldpro.org/#webpage", "url": "https://adshieldpro.org/", "name": "AdShield Pro", "isPartOf": { "@id": "https://adshieldpro.org/#website" }, "about": { "@id": "https://adshieldpro.org/#app" }, "publisher": { "@id": "https://adshieldpro.org/#organization" } },
+    { "@type": "BreadcrumbList", "@id": "https://adshieldpro.org/#breadcrumb", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://adshieldpro.org/" }] },
+    { "@type": "SoftwareApplication", "@id": "https://adshieldpro.org/#app", "name": "AdShield Pro", "applicationCategory": "BrowserApplication", "operatingSystem": "Chrome", "description": "Privacy-first, offline-first ad blocker that blocks ads and trackers to make browsing faster and cleaner.", "url": "https://adshieldpro.org/", "image": "https://adshieldpro.org/ui-image.png", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "category": "Free" }, "publisher": { "@id": "https://adshieldpro.org/#organization" } },
+    { "@type": "FAQPage", "mainEntity": [
+      { "@type": "Question", "name": "Is AdShield Pro free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Core ad blocking and tracker protection are completely free with no usage limits." } },
+      { "@type": "Question", "name": "Does AdShield Pro work on YouTube?", "acceptedAnswer": { "@type": "Answer", "text": "AdShield Pro blocks many ad types across websites. Effectiveness on streaming platforms may vary as ad delivery methods change frequently." } },
+      { "@type": "Question", "name": "Will AdShield Pro slow down my browser?", "acceptedAnswer": { "@type": "Answer", "text": "No — it speeds it up. By blocking ads and trackers before they load, pages render faster and use less CPU and memory." } },
+      { "@type": "Question", "name": "Is AdShield Pro Manifest V3 compatible?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AdShield Pro was built for Manifest V3 from the start, using Chrome&#39;s declarativeNetRequest API for efficient, future-proof filtering." } }
+    ] }
+  ]
+}
+</script>
 
 <div class="bg-grid">
   
