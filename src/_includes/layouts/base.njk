@@ -1,12 +1,34 @@
+{% set t = i18n[lang] | default(i18n.en) %}
+{% set p = t.pages[pageKey] %}
+{% set meta = p.meta | default(meta) %}
 <!doctype html>
-<html lang="en">
+<html lang="{{ t.lang | default('en') }}" dir="{{ t.dir | default('ltr') }}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}" />
-  <link rel="canonical" href="https://adshieldpro.org/" />
-  <meta name="robots" content="index,follow" />
+  <title>{{ meta.title | default(title) }}</title>
+  <meta name="description" content="{{ meta.description | default(description) }}" />
+  {% if meta.canonical %}<link rel="canonical" href="{{ meta.canonical }}" />{% endif %}
+  <meta name="robots" content="{{ meta.robots | default('index,follow') }}" />
+
+  {% if meta.ogTitle %}
+  <meta property="og:title" content="{{ meta.ogTitle }}" />
+  <meta property="og:description" content="{{ meta.ogDescription }}" />
+  <meta property="og:type" content="{{ meta.ogType | default('website') }}" />
+  <meta property="og:url" content="{{ meta.ogUrl }}" />
+  <meta property="og:site_name" content="{{ site.name }}" />
+  <meta property="og:image" content="{{ site.ogImage }}" />
+  <meta property="og:image:alt" content="{{ meta.ogImageAlt | default('AdShield Pro browser extension interface') }}" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ meta.ogTitle }}" />
+  <meta name="twitter:description" content="{{ meta.ogDescription }}" />
+  <meta name="twitter:image" content="{{ site.ogImage }}" />
+  {% endif %}
+
+  {% if jsonld %}
+  <script type="application/ld+json">{{ jsonld | safe }}</script>
+  {% endif %}
 
   <style>
     {% inlineFile "site/styles.css" %}
@@ -19,5 +41,9 @@
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900">
   {{ content | safe }}
+  <script>
+    var el = document.getElementById('year');
+    if (el) el.textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

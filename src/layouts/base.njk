@@ -1,5 +1,8 @@
+{% set t = i18n[lang] | default(i18n.en) %}
+{% set p = t.pages[pageKey] %}
+{% set meta = p.meta | default(meta) %}
 <!doctype html>
-<html lang="{{ i18n[lang].lang | default('en') }}" dir="{{ i18n[lang].dir | default('ltr') }}">
+<html lang="{{ t.lang | default('en') }}" dir="{{ t.dir | default('ltr') }}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
