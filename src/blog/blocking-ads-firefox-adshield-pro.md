@@ -33,45 +33,64 @@ draft: false
 
 ## Firefox: The Privacy-Forward Choice
 
-Firefox is built by Mozilla — a non-profit whose business model does not depend on advertising. It ships with Enhanced Tracking Protection (ETP) enabled by default and has stronger fingerprint resistance than Chrome.
+In the modern web ecosystem, Mozilla Firefox stands as a crucial privacy-forward alternative to Chromium-based browsers. Unlike Google Chrome, Microsoft Edge, and Opera—which all run on Chromium's Blink rendering engine—Firefox is built upon its own independent Gecko engine. This architectural separation has profound privacy implications. Because Mozilla is not an advertising company, its development roadmap is not aligned with the ad tech industry. This difference is most obvious in Firefox’s handling of extension architectures. While Chrome actively pushes Manifest V3 to restrict dynamic request filtering via the `webRequest` API, Firefox maintains full support for advanced blocking APIs, allowing privacy extensions like AdShield Pro to analyze and block incoming payloads dynamically before they are executed in the browser sandbox.
 
-Combined with AdShield Pro, it creates one of the most private mainstream browsing environments available without switching to Tor Browser.
+Furthermore, Firefox integrates extensive native security tools. It features Enhanced Tracking Protection (ETP) and Total Cookie Protection, which actively partition storage on a per-site basis. However, even with these strong defaults, Firefox's built-in blocklists are limited. They prioritize site compatibility over absolute blocking, which allows sophisticated script-injection trackers, CNAME cloaking schemes, and modern behavioral analytics to slip through. Combining Firefox’s independent engine with the dedicated filtering engine of AdShield Pro creates a highly secure, private mainstream browsing environment.
 
 ## Installing AdShield Pro on Firefox
 
-1. Open Firefox and visit the [Mozilla Add-ons store](https://addons.mozilla.org) or [adshieldpro.org](https://adshieldpro.org)
-2. Click **Add to Firefox**
-3. Review the permissions prompt and click **Add**
-4. Click **Okay** on the confirmation screen
+Deploying AdShield Pro to your Firefox browser is a straightforward process that takes under a minute. Because Firefox utilizes the WebExtensions API framework, extension packages (XPI files) are cryptographically signed by Mozilla and isolated from the host operating system:
 
-Blocking starts immediately. The shield icon appears in your toolbar.
+1. **Visit the Store**: Open Firefox and navigate to the official [Mozilla Add-ons Store](https://addons.mozilla.org) or visit the [AdShield Pro website](https://adshieldpro.org) and click the Firefox installation link.
+2. **Add the Extension**: Click the prominent **Add to Firefox** button. Firefox will fetch the signed `.xpi` archive from Mozilla's secure content delivery network (CDN).
+3. **Approve Permissions**: A permission prompt will drop down from the address bar. This dialog outlines the technical capabilities AdShield Pro requires, such as the ability to access data for all websites (necessary to execute network-level filtering and inject CSS cosmetic block rules). Click **Add**.
+4. **Finalize Setup**: A confirmation box will appear indicating that the extension has been successfully added. Check the box labeled **Allow this extension to run in Private Windows** if you want AdShield Pro active during incognito sessions, then click **Okay**.
+
+Once installed, AdShield Pro activates immediately, using Firefox's high-performance memory storage to compile and run filter lists without lagging active tabs.
 
 ## Firefox vs Chrome: Key Privacy Differences
 
 | Feature | Firefox (default) | Chrome (default) |
 |---|---|---|
-| Enhanced Tracking Protection | ✅ On | ❌ Off |
-| Total Cookie Protection | ✅ On | ❌ Off |
-| Third-party cookie blocking | ✅ Partial | ❌ Off |
-| Fingerprint resistance | ✅ Basic | ❌ None |
+| Enhanced Tracking Protection | ✅ Enabled by Default (utilizes Disconnect blocklists) | ❌ Absent |
+| Total Cookie Protection | ✅ Active (partitions local storage dynamically) | ❌ Absent (allows shared third-party cookies) |
+| Third-party cookie blocking | ✅ Partially Blocked (cross-site tracking cookies dropped) | ❌ Absent (scheduled for slow phase-out) |
+| Fingerprint resistance | ✅ Basic (limits canvas readbacks and WebGL queries) | ❌ Absent (allows deep device enumeration) |
 
-Even with these advantages, Firefox's ETP misses many advertising trackers and all fingerprinting scripts. AdShield Pro fills these gaps.
+While the table above highlights Firefox's superior privacy architecture, these native features are not absolute shields. For example, Firefox’s built-in fingerprinting protection only flags known tracking scripts on a static list, leaving you vulnerable to new fingerprinting vectors. AdShield Pro resolves this by actively blocking tracking endpoints and stripping the fingerprinting parameters before they ever establish a network connection.
 
 ## Firefox Privacy Settings to Enable
 
-**Settings → Privacy & Security:**
-- Enhanced Tracking Protection → **Strict**
-- DNS over HTTPS → **Max Protection** → Cloudflare or NextDNS
-- Firefox Data Collection → **uncheck all**
+To fully optimize Firefox's privacy-forward engine, configure the following settings alongside AdShield Pro:
 
-**about:config tweaks (for advanced users):**
-- `privacy.resistFingerprinting` → `true` — standardises browser fingerprint across Firefox users
-- `media.peerconnection.enabled` → `false` — prevents WebRTC from leaking your real IP through a VPN
-- `network.http.sendRefererHeader` → `1` — reduces referrer-based tracking
+### Enhanced Tracking Protection → Strict
+Firefox’s Strict ETP partitions all cookies under Total Cookie Protection ("cookie jarring") and blocks known tracking elements, social media widgets, fingerprinters, and cryptominers. This ensures that third-party trackers are never allowed to execute script queries.
+To enable this, go to `about:preferences#privacy`. Under the **Enhanced Tracking Protection** heading, select the radio button labeled **Strict**. Click the **Reload all tabs** button if prompted. This drastically curtails cross-site tracking, and any minor site breakages can be managed via the shield icon in the address bar.
+
+### DNS over HTTPS → Max Protection → Cloudflare or NextDNS
+Standard DNS requests are transmitted in cleartext, letting network administrators and ISPs compile a log of every site you visit. DNS-over-HTTPS (DoH) encrypts these requests inside standard HTTPS packets (port 443). Selecting Max Protection ensures Firefox never falls back to unencrypted DNS.
+Scroll down in `about:preferences#privacy` to the **DNS over HTTPS** section. Select **Max Protection** and choose **Cloudflare** or **NextDNS** from the dropdown menu. This creates an encrypted tunnel for all domain name resolutions, keeping your network traffic private.
+
+### Firefox Data Collection → Uncheck All
+Mozilla gathers basic browser telemetry, interaction logs, and crash reports. While intended for browser maintenance, this outbound data can theoretically be intercepted or correlated with your IP address.
+Under the **Firefox Data Collection and Use** header in `about:preferences#privacy`, uncheck all options, including **Allow Firefox to send technical and interaction data to Mozilla** and **Allow Firefox to send backlogged crash reports**. This halts all background telemetry uploads, saving CPU resources.
+
+## about:config tweaks (for advanced users)
+
+For maximum protection, type `about:config` in the address bar, accept the warning, and apply these advanced tweaks:
+
+### `privacy.resistFingerprinting` → `true`
+This setting enables Tor-based privacy features within Gecko. It spoofs your user-agent to a generic version, rounds window dimensions to multiples of 200x100 pixels, disables the Gamepad API, and reduces the precision of JavaScript execution timers to mitigate hardware side-channel attacks. This creates a uniform digital footprint across all RFP users, making you anonymous.
+
+### `media.peerconnection.enabled` → `false`
+WebRTC allows peer-to-peer media streaming but uses STUN protocols that can query your local network cards directly. This exposes your true local IP address and your public WAN IP address, bypassing VPN tunnels. Toggling this to `false` disables WebRTC peer connections, eliminating VPN leaks while securing your network.
+
+### `network.http.sendRefererHeader` → `1`
+When you click a link, the browser sends the full source URL to the target site via the HTTP `Referer` header. Changing this value from `2` (send for all resources) to `1` (send only for direct links) stops third-party scripts and images on a page from learning the host URL, breaking tracking chains.
 
 ## The Combined Result
 
-Firefox Strict ETP + AdShield Pro + about:config tweaks blocks all known third-party trackers, removes advertising scripts, prevents fingerprinting (both ETP and AdShield Pro contribute), stops WebRTC IP leaks, and encrypts DNS queries. This is comprehensive everyday privacy without specialist tooling.
+Operating Firefox on **Strict ETP**, deploying **AdShield Pro**, and applying **about:config** tweaks creates an exceptionally private browsing environment. This combination stops third-party trackers, eliminates bloated ad scripts, prevents browser fingerprinting, blocks WebRTC IP leaks, and secures DNS requests. It provides absolute privacy without requiring specialized, slow-routing browsers like Tor.
 
 ---
 
