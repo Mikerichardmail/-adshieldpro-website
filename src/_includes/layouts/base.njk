@@ -8,8 +8,11 @@
   <link rel="canonical" href="https://adshieldpro.org/" />
   <meta name="robots" content="index,follow" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/site/styles.css" />
+  <style>
+    {% inlineFile "site/styles.css" %}
+  </style>
+  <link rel="preload" href="/styles.css" as="style" onload="this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="/styles.css" /></noscript>
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/icon.svg" />
   <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />

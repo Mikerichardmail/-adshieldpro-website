@@ -51,6 +51,10 @@
             "href": "/pricing"
           },
           {
+            "label": "Blog",
+            "href": "/blog"
+          },
+          {
             "label": "Support",
             "href": "/support"
           }
@@ -112,6 +116,10 @@
       {
         "label": "Pricing",
         "href": "/pricing"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
       },
       {
         "label": "Support",
@@ -231,6 +239,11 @@
             "label": "Fix Broken Sites After Blocking",
             "desc": "Allowlist and per-site troubleshooting steps.",
             "href": "/how-to-fix-sites-after-blocking"
+          },
+          {
+            "label": "AdShield Pro Blog",
+            "desc": "Insights, guides, and tips on blocking ads, preventing tracking, and browsing safely.",
+            "href": "/blog"
           }
         ]
       },
