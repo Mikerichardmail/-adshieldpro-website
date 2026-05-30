@@ -7,8 +7,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "site/icon.svg": "icon.svg" });
   eleventyConfig.addPassthroughCopy({ "site/ui-image.png": "ui-image.png" });
   eleventyConfig.addPassthroughCopy({ "site/robots.txt": "robots.txt" });
-  eleventyConfig.addPassthroughCopy({ "site/sitemap.xml": "sitemap.xml" });
   eleventyConfig.addPassthroughCopy({ "site/llms.txt": "llms.txt" });
+
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    if (!dateObj) return "";
+    const d = new Date(dateObj);
+    if (isNaN(d.getTime())) return dateObj;
+    return d.toISOString().split("T")[0];
+  });
 
   eleventyConfig.addShortcode("inlineFile", function (filePath) {
     const absolutePath = path.join(__dirname, filePath);
